@@ -1,0 +1,71 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "FerromancySorcerer",
+				"abbreviation": "FS",
+				"full": "Sorcerer Ferromancy",
+				"authors": [
+					"Ebznax02"
+				],
+				"convertedBy": [
+					"Ebznax02"
+				],
+				"version": "1.0"
+			}
+		],
+		"dateAdded": 1659216578,
+		"dateLastModified": 1729630006,
+		"_dateLastModifiedHash": "cb3924078d",
+		"edition": "classic"
+	},
+	"subclass": [
+		{
+			"name": "Ferromancy Sorcerer",
+			"source": "FerromancySorcerer",
+			"shortName": "Ferromancy",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassFeatures": [
+				"Level 3 Feature|Sorcerer||Ferromancy|FerromancySorcerer|3",
+				"Level 6 Feature|Sorcerer||Ferromancy|FerromancySorcerer|6",
+				"Level 14 Feature|Sorcerer||Ferromancy|FerromancySorcerer|14",
+				"Level 18 Feature|Sorcerer||Ferromancy|FerromancySorcerer|18"
+			],
+"subclassSpells": [
+				"Shield",
+				"False Life",
+				"Cloud of Daggers",
+				"Heat Metal",
+				"Conjure Barrage",
+				"Leomund's Tiny Hut",
+				"Fabricate",
+				"Summon Construct",
+				"Conjure Volley",
+				"Wall of Stone"
+			]
+		}
+	],
+"subclassFeature": [
+    {
+        "name": "Ferromancy Sorcerer",
+        "source": "FerromancySorcerer",
+        "className": "Sorcerer",
+        "classSource": "PHB",
+        "subclassShortName": "Ferromancy",
+        "subclassSource": "FerromancySorcerer",
+        "level": 3,
+        "entries": [
+            "please insert a description of the subclass here thank you future me"
+          {
+            "type": "refSubclassFeature",
+					  "subclassFeature":"Ferromantic Spells|Sorcerer||Ferromancy|FerromancySorcerer|3"
+          },
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Level 3 Feature|Sorcerer||Ferromancy|FerromancySorcerer|3"
+				},
+        ]
+    }
+]
+}
