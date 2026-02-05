@@ -1,0 +1,33 @@
+"_meta": {
+		"sources": [
+			{
+				"json": "RavnicaHomebrew",
+				"abbreviation": "RH",
+				"full": "Ravnica Homebrew",
+				"version": "1.0.0",
+				"edition": "classic"
+			}
+		],
+		"dateAdded": 1769191781,
+		"dateLastModified": 1769191781,
+		"edition": "classic"
+	},
+	"baseitem": [
+		{
+			"name": "Beast Tamer's Bond",
+			"source": "RavnicaHomebrew",
+			"type": "OTH|XDMG",
+      "wondrous": true
+			"rarity": "rare",
+			"reqAttune": "by a ranger"
+"reqAttuneTags": [
+		{
+			"class": "ranger"
+		},
+	],
+ 			"entries": [
+				"This simple thin silver necklace has a matching collar that can be worn by any Huge or smaller Beast. Whenever a beast wearing a collar hits a creature with an attack, that creature becomes marked until the end of its next turn. If you hit a marked creature with an attack while wearing this necklace, you can use your reaction to expend a use of Favored Enemy to cast {@spell Hunter's Mark} targetting the marked creature."
+			],
+		}
+	]
+}
