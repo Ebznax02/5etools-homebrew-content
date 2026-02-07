@@ -1,0 +1,161 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "FerromancySorcerer",
+				"abbreviation": "FS",
+				"full": "Sorcerer Ferromancy",
+				"authors": [
+					"Ebznax02"
+				],
+				"convertedBy": [
+					"Ebznax02"
+				],
+				"version": "1.0"
+			}
+		],
+		"dateAdded": 1659216578,
+		"dateLastModified": 1729630006,
+		"_dateLastModifiedHash": "cb3924078d",
+		"edition": "classic"
+	},
+	"subclass": [
+		{
+			"name": "Ferromancy Sorcerer",
+			"source": "FerromancySorcerer",
+			"shortName": "Ferromancy",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassFeatures": [
+				"Level 3 Steel-Forged Sorcery|Sorcerer||Ferromancy|FerromancySorcerer|3",
+				"Level 6 Metal Mastery|Sorcerer||Ferromancy|FerromancySorcerer|6",
+				"Level 14 Ferromantic Bulwark|Sorcerer||Ferromancy|FerromancySorcerer|14",
+				"Level 18 Ferrochemical Savant|Sorcerer||Ferromancy|FerromancySorcerer|18"
+			],
+"subclassSpells": [
+				"Shield",
+				"False Life",
+				"Cloud of Daggers",
+				"Heat Metal",
+				"Conjure Barrage",
+				"Leomund's Tiny Hut",
+				"Fabricate",
+				"Summon Construct",
+				"Conjure Volley",
+				"Wall of Stone"
+			]
+		}
+	],
+"subclassFeature": [
+    {
+        "name": "Ferromancy Sorcerer",
+        "source": "FerromancySorcerer",
+        "className": "Sorcerer",
+        "classSource": "PHB",
+        "subclassShortName": "Ferromancy",
+        "subclassSource": "FerromancySorcerer",
+        "level": 3,
+        "entries": [
+            "please insert a description of the subclass here thank you future me"
+          {
+            "type": "refSubclassFeature",
+					  "subclassFeature":"Ferromantic Spells|Sorcerer||Ferromancy|FerromancySorcerer|3"
+          },
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Level 3  Steel-Forged Sorcery|Sorcerer|Ferromancy|FerromancySorcerer|3"
+				},
+        ]
+    }
+]
+{
+			"name": "Ferromantic Spells",
+			"source": "FerromancySorcerer",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "Ferromancy",
+			"subclassSource": "FerromancySorcerer",
+			"level": 3,
+			"entries": [
+				"You always have certain spells prepared after you reach particular levels in this class, as shown in the Ferromantic Spells table. These spells count as sorcerer spells for you, but they don't count against the number of sorcerer spells you prepare.",
+				{
+					"type": "table",
+					"caption": "Ferromantic Spells",
+					"colLabels": [
+						"Sorcerer Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell Shield}, {@spell False Life}, {@spell Cloud of Daggers}, {@spell Heat Metal}"
+						],
+						[
+							"5th",
+							"{@spell Conjure Barrage}, {@spell Leomund's Tiny Hut}"
+						],
+						[
+							"7th",
+							"{@spell Fabricate}, {@spell Summon Construct}"
+						],
+						[
+							"9th",
+							"{@spell Conjure Volley}, {@spell Wall of Stone}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Steel-Forged Sorcery",
+			"source": "FerromancySorcerer",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "Ferromancy",
+			"subclassSource": "FerromancySorcerer",
+			"level": 3,
+			"entries": [
+"You gain proficiency with simple and martial weapons and and gain training with medium and heavy armor and shields. Additionally, you ignore the Strength requirements of Heavy weapons and armor. When you make a melee weapon attack, you can use your Charisma modifier for the attack and damage rolls instead of using Strength and can increase your reach by 10 feet until the end of your next turn."
+				]
+		},
+{
+			"name": " Metal Mastery",
+			"source": "FerromancySorcerer",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "Ferromancy",
+			"subclassSource": "FerromancySorcerer",
+			"level": 6,
+			"entries": [
+"You can wield your weapon with the might of magic rather than your hands. Whenever you equip a weapon, you can have it magically float within 5 feet of you, leaving your hands free. Only one weapon can be wielded this way, attempting to float more than one weapon causes both to fall to the ground.",
+"Additionally, after you cast a spell that has a casting time of an action, you can make one attack with a weapon as a Bonus Action. When you make a melee weapon attack your reach now increases by 30 feet until the end of your turn."				]
+		},
+{
+	"name": " Ferromantic Bulwark",
+			"source": "FerromancySorcerer",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "Ferromancy",
+			"subclassSource": "FerromancySorcerer",
+			"level": 14,
+			"entries": [
+"As a Magic action, you can flare your metallurgic powers to create a defensive field around yourself. For the next 10 minutes, you gain a bonus to your AC equal to your Charisma modifier and a Fly speed equal to your speed. You only gain these benefits if you're wearing metal armor.",
+"Once you use this feature, you can't use it again until you finish a Long Rest unless you spend 5 Sorcery Points (no action required) to restore your use of it." 		]
+		},
+{
+	"name": " Ferrochemical Savant",
+			"source": "FerromancySorcerer",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "Ferromancy",
+			"subclassSource": "FerromancySorcerer",
+			"level": 18,
+			"entries": [
+"As a Magic action, you can touch an object—no larger than a 25-foot cube— made of metal and transform it into another kind of metal that you have touched before. The transformation lasts 24 hours before it reverts back to its originally material. ",
+"Additionally, you can cast Telekinesis by spending 2 sorcery points. When cast this way, the spell doesn't require concentration but can only target objects made of metal or with metal components. " 		]
+		},
+}
