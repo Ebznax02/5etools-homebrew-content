@@ -2,9 +2,9 @@
 	"_meta": {
 		"sources": [
 			{
-				"json": "FerromancySorcerer",
-				"abbreviation": "FS",
-				"full": "Sorcerer Ferromancy",
+				"json": "LawMageWizard",
+				"abbreviation": "LMW",
+				"full": "Wizard Law Mage",
 				"authors": [
 					"Ebznax02"
 				],
@@ -21,68 +21,56 @@
 	},
 	"subclass": [
 		{
-			"name": "Ferromancy Sorcerer",
-			"source": "FerromancySorcerer",
-			"shortName": "Ferromancy",
-			"className": "Sorcerer",
+			"name": "Law Mage Wizard",
+			"source": "LawMageWizard",
+			"shortName": "Law Mage",
+			"className": "Wizard",
 			"classSource": "PHB",
 			"subclassFeatures": [
-				"Level 3 Steel-Forged Sorcery|Sorcerer||Ferromancy|FerromancySorcerer|3",
-				"Level 6 Metal Mastery|Sorcerer||Ferromancy|FerromancySorcerer|6",
-				"Level 14 Ferromantic Bulwark|Sorcerer||Ferromancy|FerromancySorcerer|14",
-				"Level 18 Ferrochemical Savant|Sorcerer||Ferromancy|FerromancySorcerer|18"
+				"Level 3 Steel-Forged Sorcery|Wizard||Law Mage|LawMageWizard|3",
+				"Level 6 Metal Mastery|Wizard||Law Mage|LawMageWizard|6",
+				"Level 14 Ferromantic Bulwark|Wizard||Law Mage|LawMageWizard|14",
+				"Level 18 Ferrochemical Savant|Wizard||Law Mage|LawMageWizard|18"
 			],
-"subclassSpells": [
-				"Shield",
-				"False Life",
-				"Cloud of Daggers",
-				"Heat Metal",
-				"Conjure Barrage",
-				"Leomund's Tiny Hut",
-				"Fabricate",
-				"Summon Construct",
-				"Conjure Volley",
-				"Wall of Stone"
-			]
 		}
 	],
 "subclassFeature": [
     {
-        "name": "Ferromancy Sorcerer",
-        "source": "FerromancySorcerer",
-        "className": "Sorcerer",
+        "name": "Law Mage Wizard",
+        "source": "LawMageWizard",
+        "className": "Wizard",
         "classSource": "PHB",
-        "subclassShortName": "Ferromancy",
-        "subclassSource": "FerromancySorcerer",
+        "subclassShortName": "Law Mage",
+        "subclassSource": "LawMageWizard",
         "level": 3,
         "entries": [
             "please insert a description of the subclass here thank you future me"
           {
             "type": "refSubclassFeature",
-					  "subclassFeature":"Ferromantic Spells|Sorcerer||Ferromancy|FerromancySorcerer|3"
+					  "subclassFeature":"Ferromantic Spells|Wizard||Law Mage|LawMageWizard|3"
           },
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Level 3  Steel-Forged Sorcery|Sorcerer|Ferromancy|FerromancySorcerer|3"
+					"subclassFeature": "Level 3  Steel-Forged Sorcery|Wizard|Law Mage|LawMageWizard|3"
 				},
         ]
     }
 ]
 {
 			"name": "Ferromantic Spells",
-			"source": "FerromancySorcerer",
-			"className": "Sorcerer",
+			"source": "LawMageWizard",
+			"className": "Wizard",
 			"classSource": "PHB",
-			"subclassShortName": "Ferromancy",
-			"subclassSource": "FerromancySorcerer",
+			"subclassShortName": "Law Mage",
+			"subclassSource": "LawMageWizard",
 			"level": 3,
 			"entries": [
-				"You always have certain spells prepared after you reach particular levels in this class, as shown in the Ferromantic Spells table. These spells count as sorcerer spells for you, but they don't count against the number of sorcerer spells you prepare.",
+				"You always have certain spells prepared after you reach particular levels in this class, as shown in the Ferromantic Spells table. These spells count as Wizard spells for you, but they don't count against the number of Wizard spells you prepare.",
 				{
 					"type": "table",
 					"caption": "Ferromantic Spells",
 					"colLabels": [
-						"Sorcerer Level",
+						"Wizard Level",
 						"Spells"
 					],
 					"colStyles": [
@@ -112,11 +100,11 @@
 		},
 		{
 			"name": "Steel-Forged Sorcery",
-			"source": "FerromancySorcerer",
-			"className": "Sorcerer",
+			"source": "LawMageWizard",
+			"className": "Wizard",
 			"classSource": "PHB",
-			"subclassShortName": "Ferromancy",
-			"subclassSource": "FerromancySorcerer",
+			"subclassShortName": "Law Mage",
+			"subclassSource": "LawMageWizard",
 			"level": 3,
 			"entries": [
 "You gain proficiency with simple and martial weapons and and gain training with medium and heavy armor and shields. Additionally, you ignore the Strength requirements of Heavy weapons and armor. When you make a melee weapon attack, you can use your Charisma modifier for the attack and damage rolls instead of using Strength and can increase your reach by 10 feet until the end of your next turn."
@@ -124,11 +112,11 @@
 		},
 {
 			"name": " Metal Mastery",
-			"source": "FerromancySorcerer",
-			"className": "Sorcerer",
+			"source": "LawMageWizard",
+			"className": "Wizard",
 			"classSource": "PHB",
-			"subclassShortName": "Ferromancy",
-			"subclassSource": "FerromancySorcerer",
+			"subclassShortName": "Law Mage",
+			"subclassSource": "LawMageWizard",
 			"level": 6,
 			"entries": [
 "You can wield your weapon with the might of magic rather than your hands. Whenever you equip a weapon, you can have it magically float within 5 feet of you, leaving your hands free. Only one weapon can be wielded this way, attempting to float more than one weapon causes both to fall to the ground.",
@@ -136,11 +124,11 @@
 		},
 {
 	"name": " Ferromantic Bulwark",
-			"source": "FerromancySorcerer",
-			"className": "Sorcerer",
+			"source": "LawMageWizard",
+			"className": "Wizard",
 			"classSource": "PHB",
-			"subclassShortName": "Ferromancy",
-			"subclassSource": "FerromancySorcerer",
+			"subclassShortName": "Law Mage",
+			"subclassSource": "LawMageWizard",
 			"level": 14,
 			"entries": [
 "As a Magic action, you can flare your metallurgic powers to create a defensive field around yourself. For the next 10 minutes, you gain a bonus to your AC equal to your Charisma modifier and a Fly speed equal to your speed. You only gain these benefits if you're wearing metal armor.",
@@ -148,11 +136,11 @@
 		},
 {
 	"name": " Ferrochemical Savant",
-			"source": "FerromancySorcerer",
-			"className": "Sorcerer",
+			"source": "LawMageWizard",
+			"className": "Wizard",
 			"classSource": "PHB",
-			"subclassShortName": "Ferromancy",
-			"subclassSource": "FerromancySorcerer",
+			"subclassShortName": "Law Mage",
+			"subclassSource": "LawMageWizard",
 			"level": 18,
 			"entries": [
 "As a Magic action, you can touch an object—no larger than a 25-foot cube— made of metal and transform it into another kind of metal that you have touched before. The transformation lasts 24 hours before it reverts back to its originally material. ",
