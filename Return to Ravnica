@@ -1,0 +1,2981 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "RavnicaHomebrew",
+				"abbreviation": "RTR",
+				"full": "Return to Ravnica",
+				"version": "1.0.0"
+			}
+		],
+		"dateAdded": 1602746393,
+		"dateLastModified": 1729630006
+	},
+	"spell": [
+		{
+			"uniqueId": "8b19970b-2b3c-454f-800d-d8472ddb3a5a",
+			"name": "Lightning Helix",
+			"level": 4,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "XPHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "XPHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "XPHB"
+					}
+				]
+			},
+			"entries": [
+				"Two twin bolts of intertwining magic strike out in a 100-foot-long, 5-foot-wide {@variantrule Line [Area of Effect]|XPHB|Line} from you in a direction you choose. Each creature in the {@variantrule Line [Area of Effect]|XPHB|Line} makes a Dexterity saving throw, taking {@damage 4d6} Lightning damage and {@damage 4d6} Radiant damage on a failed save or half as much damage on a successful one. Choose one creature within 30 feet of the {@variantrule Line [Area of Effect]|XPHB|Line}. That creature regains hit points equal to the total damage dealt by the spell."
+			],
+			"source": "RavnicaHomebrew",
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"damageInflict": [
+				"lightning",
+				"radiant"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"L"
+			],
+			"miscTags": [
+				"HL"
+			],
+			"subschools": [
+				"Boros Legion"
+			]
+		},
+		{
+			"uniqueId": "6ea7ede7-46d9-436e-b137-10cccc234ad3",
+			"name": "Mass Manipulation",
+			"level": 7,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 500
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"Twelve or fewer Humanoids you can see within range must succeed on a Wisdom saving throw or have the {@condition Charmed|XPHB} condition for the duration. Each target has Advantage on the save if you or your allies are fighting it. ",
+				"You have a telepathic link with the {@condition Charmed|XPHB} targets while you are on the same plane of existence as them. On your turn, you can use this link to issue commands to any number of targets (no action required), such as \"Attack that creature,\" \"Move over there,\" or \"Fetch that object.\" The targets do their best to obey on their turns. If an order is completed and a target doesn't receive further direction from you, they act and move as they like, focusing on protecting themselves.",
+				"You can command a target to take a Reaction but must take your own Reaction to do so. If a target becomes {@condition incapacitated}, the effect of the spell ends. "
+			],
+			"source": "RavnicaHomebrew",
+			"subschools": [
+				"House Dimir"
+			],
+			"conditionInflict": [
+				"incapacitated"
+			],
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "A broken pocketwatch"
+			}
+		},
+		{
+			"uniqueId": "92787a25-ae40-47e7-bbeb-a3270a244975",
+			"name": "Volatile Infestation",
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"Choose a Small or larger corpse within range. Magical spores fill the inside of the body for the duration, consuming all natural material. You can end the spell early (no action required) as a Reaction. A creature attempting to interact with the corpse must succeed on a DC 10 Dexterity check or the spell ends. ",
+				"When the spell ends the spores rapidly multiply, exploding from the corpse in a 10-foot Radius. Each creature in the Radius must succeed on a Constitution saving throw. On a failure a creature takes {@damage 3d10} Poison damage and becomes {@condition Poisoned|XPHB} for 1 minute. "
+			],
+			"source": "RavnicaHomebrew",
+			"subschools": [
+				"Golgari Swarm"
+			],
+			"conditionInflict": [
+				"poisoned"
+			],
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "A dead insect"
+			}
+		},
+		{
+			"uniqueId": "e7cda97b-655a-4a59-9b8c-18a4a7c17095",
+			"name": "Spell Transmorgification",
+			"level": 3,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"You attempt to creatively interrupt a creature in the process of casting a spell. The creature makes an Intelligence saving throw. On a failed save, the spell is replaced with a spell of equal level that you have prepared. The new spell uses the slot level, spell save DC, spell attack bonus, and spellcasting ability of the targeted caster and has the same targets as the replaced spell (even if under normal circumstances those targets are impossible). If the new spell requires {@status Concentration|XPHB}, the targeted caster is now maintaining {@status Concentration|XPHB} on that spell. "
+			],
+			"source": "RavnicaHomebrew",
+			"subschools": [
+				"Izzet League"
+			],
+			"components": {
+				"s": true
+			}
+		},
+		{
+			"uniqueId": "13904dd6-678e-46fe-b10b-ef9461ac5c8a",
+			"name": "Aura of the Wordsoul",
+			"level": 5,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"An aura radiates from you in a 30-foot  {@variantrule Emanation [Area of Effect]|XPHB|Emanation} for the duration. When you create the aura and at the start of each of your turns while it persists, you can grant {@dice 2d6} {@variantrule Temporary Hit Points|XPHB} to one creature within it. As long as a creature has these {@variantrule Temporary Hit Points|XPHB} it adds {@dice 1d4} to attack rolls and saving throws it makes. The {@variantrule Temporary Hit Points|XPHB} granted by this spell disappear when the spell ends."
+			],
+			"source": "RavnicaHomebrew",
+			"subschools": [
+				"Selesnya Conclave"
+			],
+			"components": {
+				"v": true,
+				"s": true
+			}
+		},
+		{
+			"uniqueId": "2b8b8f97-3beb-4ae8-96a6-7fb84f1438fe",
+			"name": "Pain Amplification",
+			"level": 2,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"You touch a creature, which must succeed on a Wisdom saving throw or become cursed for the duration. Until the spell ends, whenever the target takes damage from any source it takes an additional {@damage 2d8} psychic damage. "
+			],
+			"source": "RavnicaHomebrew",
+			"subschools": [
+				"Cult of Rakdos"
+			],
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "A handful of needles"
+			}
+		},
+		{
+			"name": "Phantasmal Perspective",
+			"source": "RavnicaHomebrew",
+			"page": 304,
+			"referenceSources": [
+				"DrDe-TDoN",
+				"UtHftLH"
+			],
+			"level": 5,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a bit of fleece"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You attempt to plunge the mind of a creature you can see within range into an illusory reality. The target makes an Intelligence saving throw. On a failed save, you create a phantasmal environment that is no larger than a 60-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} centered on the target. The environment can include creatures, objects, or other phenomenon but is only perceivable to the target. The phantasm includes sound, temperature, and other stimuli. The area outside the phantasm is {@variantrule Heavily Obscured|XPHB} by black mist.",
+				"The target can take a {@action Study|XPHB} action to examine the phantasm with an Intelligence ({@skill Investigation|XPHB}) check against your spell save DC. If the check succeeds, the target realizes that the phantasm is an illusion, and the spell ends.",
+				"While affected by the spell, the target treats the phantasm as if it were real and rationalizes any illogical outcomes from interacting with it. For example, if the target steps through a phantasmal bridge and survives the fall, it believes the bridge exists and something else caused it to fall. Additionally, other non-illusory creatures cannot be perceived by the target and are considered {@condition Invisible|XPHB}. Interactions with other creatures are rationalized in the same manner as interactions with the phantasm.",
+				"An affected target can even take damage from the illusion if the phantasm holds dangerous creatures or hazards. On each of your turns, such a phantasm can deal {@damage 2d8} Psychic damage to the target. The target perceives the damage as a type appropriate to the illusion."
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"savingThrow": [
+				"intelligence"
+			],
+			"abilityCheck": [
+				"intelligence"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"uniqueId": "ed4d35fb-dd3a-4dbf-82cb-660be99e5e67"
+		},
+		{
+			"name": "Rot Surge",
+			"source": "RavnicaHomebrew",
+			"level": 4,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You cause a burst of decaying matter to erupt at a point within range. Each creature in a 20-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} centered on that point makes an Constitution saving throw or become {@condition Poisoned|XPHB} for 1 minute.",
+				"A {@condition Poisoned|XPHB} creature takes {@damage 4d10} necrotic damage and gains 1 point of {@condition Exhaustion|XPHB} at the start of each of its turns. The target makes an Constitution saving throw at the end of each of its turns, ending the {@condition Poisoned|XPHB} and removing all points of {@condition Exhaustion|XPHB} gained from this spell on itself on a success ."
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"savingThrow": [
+				"intelligence",
+				"constitution"
+			],
+			"areaTags": [
+				"S"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "XPHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "XPHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "XPHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "XPHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "XPHB"
+						},
+						"subclass": {
+							"name": "Knowledge Domain",
+							"shortName": "Knowledge",
+							"source": "FRHoF"
+						}
+					}
+				]
+			},
+			"feats": [
+				{
+					"name": "Boon of Siberys",
+					"source": "EFA"
+				}
+			],
+			"uniqueId": "b8b75d5e-452a-4825-a9ac-5b020deee817",
+			"subschools": [
+				"Golgari"
+			],
+			"conditionInflict": [
+				"poisoned"
+			]
+		},
+		{
+			"name": "Regenesis",
+			"source": "RavnicaHomebrew",
+			"referenceSources": [
+				"UtHftLH"
+			],
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"A creature you touch becomes imbued with regenerative magic. They regain a number of {@variantrule Hit Points|XPHB} equal to {@dice 1d8} plus your spellcasting ability modifier. Additionally, until the spell ends the creature regain a number of {@variantrule Hit Points|XPHB} equal to {@dice 1d8} plus your spellcasting ability modifier at the start of each of its turns if it begins its turn {@status Bloodied|XPHB}. "
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"The healing increases by {@scaledice 1d8|1-9|2d8} for each spell slot level above 2."
+					]
+				}
+			],
+			"miscTags": [
+				"HL"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"backgrounds": [
+				{
+					"name": "Simic Scientist",
+					"source": "GGR"
+				}
+			],
+			"uniqueId": "bd74f8ac-55fe-430f-8f15-ed0c88292a9b",
+			"subschools": [
+				"Simic"
+			]
+		},
+		{
+			"name": "Voidslime",
+			"source": "RavnicaHomebrew",
+			"referenceSources": [
+				"DrDe-TDoN",
+				"UtHftLH"
+			],
+			"level": 4,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you take when you see a creature within 60 feet of yourself casting a spell with Verbal, Somatic, or Material components"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"backgrounds": [
+				{
+					"name": "Simic Scientist",
+					"source": "GGR"
+				}
+			],
+			"uniqueId": "f0e43379-8148-4c71-b158-24cf8422f29c",
+			"subschools": [
+				"Simic"
+			],
+			"conditionInflict": [
+				"incapacitated",
+				"restrained"
+			],
+			"entries": [
+				"You summon a short-lived ooze that attempts to devour the spell a creature within range is in the process of casting. The creature makes a Dexterity saving throw. On a failed save, the spell dissipates with no effect, and the action, {@variantrule Bonus Action|XPHB}, or {@variantrule Reaction|XPHB} used to cast it is wasted. If that spell was cast with a spell slot, the slot isn't expended. Additionally until the end of your next turn, that creature is {@condition Restrained|XPHB} and {@condition Incapacitated|XPHB} by the ooze."
+			]
+		},
+		{
+			"uniqueId": "528057ef-3f6b-4118-ad3b-26d3ede66580",
+			"name": "Inspiring Clarion",
+			"level": 4,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"entries": [
+				"Choose any number of creatures in a 30-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation}. Each of those creatures gain {@dice 3d10} {@variantrule Temporary Hit Points|XPHB} and {@variantrule Advantage|XPHB} on all attack rolls until the end of your next turn. Each other creature in the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} makes a Constitution saving throw. On a failed save, a creature takes {@damage 3d10} Thunder damage, is pushed 10 feet away from you, and becomes {@condition Deafened|XPHB} until the end of your next turn . On a successful save, a creature takes half as much damage only."
+			],
+			"source": "RavnicaHomebrew",
+			"subschools": [
+				"Boros"
+			],
+			"conditionInflict": [
+				"deafened"
+			],
+			"backgrounds": [
+				{
+					"name": "Boros Legionnaire",
+					"source": "GGR"
+				}
+			]
+		},
+		{
+			"name": "Crushing Obligation",
+			"source": "RavnicaHomebrew",
+			"level": 5,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You cause clinging shadows to erupt at a point within range, clinging to the minds of the guilty. Each creature in a 20-foot-radius, 40-foot-high {@variantrule Cylinder [Area of Effect]|XPHB|Cylinder} centered on that point makes an Wisdom saving throw. On a failed save a creature takes {@damage 5d6} Psychic damage on a failed save and becomes {@condition Charmed|XPHB} for the duration. On a successful save, a creature takes half as much damage only.",
+				"While {@condition Charmed|XPHB} this way, a creature is {@condition Prone|XPHB} and {@condition Paralyzed|XPHB}. The target makes an Wisdom saving throw at the end of each of its turns, ending the effect on itself on a success."
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"savingThrow": [
+				"intelligence",
+				"constitution"
+			],
+			"areaTags": [
+				"S"
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"uniqueId": "734add7a-00e2-4e63-bc49-70e96adeb446",
+			"subschools": [
+				"Orzhov"
+			],
+			"conditionInflict": [
+				"charmed",
+				"paralyzed",
+				"prone"
+			],
+			"backgrounds": [
+				{
+					"name": "Orzhov Representative",
+					"source": "XPHB"
+				}
+			]
+		},
+		{
+			"name": "Darkborn Sun",
+			"source": "RavnicaHomebrew",
+			"level": 6,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "emanation",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"A black sun is summoned above your head, radiating light in a 60-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from you for the duration.",
+				"When you cast this spell, you can designate creatures to be unaffected by it. While in the {@variantrule Emanation [Area of Effect]|XPHB|Emanation}, any other creature can't regain {@variantrule Hit Points|XPHB}, their {@variantrule Speed|XPHB} is halved, and whenever that creature makes an attack roll or a saving throw before the spell ends, they must subtract {@dice 1d4} from the attack roll or save. ",
+				"Whenever the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} enters a creature's space and whenever a creature enters the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} or ends its turn there, the creature makes a Constitution saving throw, taking {@damage 3d10} Necrotic damage plus {@damage 3d10} Radiant damage on a failed save, or half as much on a success. A creature makes this save only once per turn."
+			],
+			"damageInflict": [
+				"necrotic",
+				"radiant"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"HL"
+			],
+			"areaTags": [
+				"S"
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"uniqueId": "febda70d-e43b-44bb-a653-c097c1fd3e1f",
+			"subschools": [
+				"Orzhov"
+			],
+			"backgrounds": [
+				{
+					"name": "Orzhov Representative",
+					"source": "GGR"
+				}
+			]
+		},
+		{
+			"name": "Wall of Lightning",
+			"source": "RavnicaHomebrew",
+			"level": 4,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a metal wire"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"A wall of crackling lightning springs into existence at a point you choose within range. The wall appears in any orientation you choose, as a horizontal or vertical barrier or at an angle. It can be free floating or resting on a solid surface. You can make the wall up to 60 feet long and 20 feet high. The wall is always 1 inch thick. The area the wall occupies is lightly obscured.",
+				"When the wall appears, each creature in its area makes a Dexterity saving throw. On a failure a creature takes {@damage 4d6} Lightning damage and becomes {@condition Stunned|XPHB} until the end of your next turn. On a successful save, the creature takes half as much damage only.",
+				"One side of the wall, selected by you when you cast this spell, deals {@damage 4d6} Lightning damage to each creature that ends its turn within 10 feet of that side or inside the wall. A creature takes the same damage when it enters the wall for the first time on a turn or ends its turn there. The other side of the wall deals no damage."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"The damage increases by {@scaledamage 5d8|4-9|1d6} for each spell slot level above 4."
+					]
+				}
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"W"
+			],
+			"classes": {
+				"fromClassList": []
+			},
+			"backgrounds": [
+				{
+					"name": "Izzet Engineer",
+					"source": "GGR"
+				}
+			],
+			"uniqueId": "03b47af5-f7fd-4c1c-93bd-42b8a15251f3",
+			"subschools": [
+				"Izzet"
+			],
+			"conditionInflict": [
+				"stunned"
+			]
+		}
+	],
+	"monster": [
+		{
+			"uniqueId": "c74298c9-4bc2-4188-b8b5-2d49de48cb73",
+			"name": "Vannifar, Evolved Enigma",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "RavnicaHomebrew",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"special": "19 (natural armor)"
+				}
+			],
+			"hp": {
+				"formula": "21d8 + 84",
+				"average": 178
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 30
+			},
+			"str": 11,
+			"dex": 14,
+			"con": 18,
+			"int": 26,
+			"wis": 22,
+			"cha": 19,
+			"passive": 24,
+			"cr": "26",
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languages": [
+				"Common",
+				"Elvish",
+				"Primordial",
+				"Merfolk"
+			],
+			"languageTags": [
+				"C",
+				"E",
+				"P"
+			],
+			"save": {
+				"con": "+12",
+				"int": "+16",
+				"wis": "+14",
+				"cha": "+12"
+			},
+			"skill": {
+				"animal handling": "+14",
+				"arcana": "+16",
+				"nature": "+16",
+				"medicine": "+14",
+				"perception": "+14"
+			},
+			"resist": [
+				"acid",
+				"cold",
+				"fire"
+			],
+			"conditionImmune": [
+				"blinded",
+				"deafened",
+				"grappled",
+				"prone",
+				"restrained",
+				"unconscious"
+			],
+			"trait": [
+				{
+					"name": "Amorphous",
+					"entries": [
+						"Vannifar can move through a space as narrow as 1 inch wide without squeezing."
+					]
+				},
+				{
+					"name": "Amphibious",
+					"entries": [
+						"Vannifar can breathe air and water."
+					]
+				},
+				{
+					"name": "Prime Speaker's Authority",
+					"entries": [
+						"While holding the Prime Speaker's Trident, Vannifar's voice can be heard clearly from up to 500 feet away no matter what volume she speaks at. She can choose to disable and enable this trait as a Bonus Action."
+					]
+				},
+				{
+					"name": "Bolstering Presence",
+					"entries": [
+						"Vannifar emits life bolstering energy within 30 feet of herself. An ally that starts its turn there gains 11 ({@damage 2d10}) {@variantrule Hit Points|XPHB}."
+					]
+				},
+				{
+					"name": "Toxic Skin",
+					"entries": [
+						"Whenever a creature hits Vannifar with a melee attack, that creature takes 11 ({@damage 2d6}) poison damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Amorphous",
+				"Amphibious",
+				"Regeneration"
+			],
+			"shortName": "Vannifar",
+			"isNamedCreature": true,
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Vannifar casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 24}):"
+					],
+					"displayAs": "action",
+					"will": [
+						"{@spell Alter Self|XPHB}",
+						"{@spell Command|XPHB}",
+						"{@spell Control Water|XPHB}",
+						"{@spell Dispel Magic|XPHB}",
+						"{@spell Druidcraft|XPHB}",
+						"{@spell Enlarge/Reduce|XPHB}",
+						"{@spell Evard's Black Tentacles|XPHB}",
+						"{@spell Polymorph|XPHB}",
+						"{@spell Prestidigitation|XPHB}"
+					],
+					"daily": {
+						"1": [
+							"{@spell Befuddlement|XPHB}",
+							"{@spell Chain Lightning|XPHB}",
+							"{@spell Dominate Monster|XPHB}",
+							"{@spell Regenerate|XPHB}",
+							"{@spell Teleport|XPHB}",
+							"{@spell Wall of Force|XPHB}"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"action": [
+				{
+					"name": "Multi-Attack",
+					"entries": [
+						"Vannifar makes three attacks. She can substitute one of these attacks with a spell with a casting time of one action."
+					]
+				},
+				{
+					"name": "Prime Speaker's Trident",
+					"entries": [
+						"{@atk mw,rw} {@hit 16} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}11 ({@damage 1d6+8}) piercing damage and each creature of Vannifar's choice within 10 feet of the target takes 14 ({@damage 4d6}) thunder damage. On a hit or miss the Trident always returns to Vannifar's hand after an attack."
+					]
+				},
+				{
+					"name": "Paralyzing Tendril",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 15 ft., one target. {@h} The target is {@condition grappled} and {@condition restrained} (escape {@dc 20}). At the end of a {@condition grappled} creature's turn it must succeed on a {@dc 20} Constitution saving throw or be {@condition paralyzed} until the end of its next turn. Vannifar can have two targets {@condition grappled} this way at a time."
+					]
+				},
+				{
+					"name": "Biomantic Mastery {@recharge 5}",
+					"entries": [
+						"Vannifar enhances the biology of herself and up to 2 other creatures of her choice that she can see within 60 feet of herself. Until the end of Vannifar's next turn, each target has advantage on all {@variantrule D20 Tests|XPHB}, all attack rolls against them have disadvantage, "
+					]
+				}
+			],
+			"miscTags": [
+				"RW",
+				"MW",
+				"MLW",
+				"THW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"grappled",
+				"prone",
+				"restrained"
+			],
+			"reaction": [
+				{
+					"name": "Voidslime (3/Day)",
+					"entries": [
+						"Vannifar casts {@spell Counterspell|XPHB} in response to the spell's trigger, using the same spellcasting ability as Spellcasting. If the target fails its saving throw they become enveloped in a short lasting ooze. Until the end of the target's next turn they are {@condition restrained} and cannot speak."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Deluge",
+					"entries": [
+						"{@actSave str} {@dc 24}, each creature in a 60-foot {@variantrule Cube [Area of Effect]|XPHB|Cube} originating from a point on the ground Vannifar can see within 150 feet. {@actSaveFail} 22 ({@damage 4d10}) bludgeoning damage and the target is knocked {@condition prone} and pushed along the ground up to 60 feet from the origin. {@actSaveSuccess} Half damage only."
+					]
+				},
+				{
+					"name": "Strike",
+					"entries": [
+						"Vannifar makes a melee attack."
+					]
+				}
+			],
+			"damageTags": [
+				"B",
+				"I",
+				"P",
+				"T"
+			],
+			"damageTagsSpell": [
+				"B",
+				"L",
+				"O",
+				"P",
+				"S",
+				"Y"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"strength"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"intelligence",
+				"strength",
+				"wisdom"
+			]
+		},
+		{
+			"uniqueId": "64451d0b-817f-4cac-bb98-48e7d87ba365",
+			"name": "Narcomoeba",
+			"size": [
+				"M"
+			],
+			"type": "aberration",
+			"source": "RavnicaHomebrew",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				9
+			],
+			"hp": {
+				"formula": "4d8",
+				"average": 18
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 10,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 1,
+			"dex": 8,
+			"con": 11,
+			"int": 2,
+			"wis": 4,
+			"cha": 6,
+			"passive": 7,
+			"cr": "1/2",
+			"senses": [
+				"truesight 10 ft. (blind beyond this)"
+			],
+			"senseTags": [
+				"U"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"unconscious"
+			],
+			"immune": [
+				"acid",
+				"bludgeoning",
+				"cold",
+				"fire",
+				"lightning",
+				"necrotic",
+				"piercing",
+				"poison",
+				"radiant",
+				"slashing",
+				"thunder"
+			],
+			"trait": [
+				{
+					"name": "Detect Inteligence",
+					"entries": [
+						"The narcomoeba magically senses the location of any creature within 500 feet of itself that has an Intelligence score of 3 or higher, regardless of interposing barriers."
+					]
+				},
+				{
+					"name": "Incorporeal Movement",
+					"entries": [
+						"The narcomoeba can move through other creatures and objects as if they were {@quickref difficult terrain||3}. It takes 5 ({@damage 1d10}) force damage if it ends its turn inside an object."
+					]
+				},
+				{
+					"name": "Psychic Leech",
+					"entries": [
+						"Any creature within 30 feet of the narcomoeba has disadvantage on saving throws to maintain {@status Concentration|XPHB} and on Intelligence, Wisdom, and Charisma saving throws. "
+					]
+				}
+			],
+			"traitTags": [
+				"Incorporeal Movement"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting (Psionics)",
+					"headerEntries": [
+						"The narcomoeba can cast the following spells, requiring no spell components:"
+					],
+					"displayAs": "action",
+					"will": [
+						"{@spell Dimension Door|XPHB}",
+						"{@spell Etherealness|XPHB}"
+					],
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"P"
+			],
+			"action": [
+				{
+					"name": "Dream Eater",
+					"entries": [
+						"{@atk mw} {@hit +2} to hit, reach 5 ft., one {@condition Unconscious|XPHB} target. {@h}2 ({@damage 1d4}) psychic damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"damageTags": [
+				"O",
+				"Y"
+			],
+			"damageTagsSpell": [
+				"O"
+			]
+		},
+		{
+			"uniqueId": "34151f6b-1422-4d2a-ba6e-b6d94bb3ce50",
+			"name": "Photohydra",
+			"size": [
+				"H"
+			],
+			"type": "plant",
+			"source": "RavnicaHomebrew",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "14d12 + 70",
+				"average": 161
+			},
+			"speed": {
+				"walk": 10
+			},
+			"str": 20,
+			"dex": 10,
+			"con": 20,
+			"int": 2,
+			"wis": 10,
+			"cha": 6,
+			"passive": 18,
+			"cr": "9",
+			"senses": [
+				"tremorsense 120 ft. (blind beyond this radius)"
+			],
+			"senseTags": [
+				"T"
+			],
+			"languages": [
+				"Understands Sylvan but can't speak"
+			],
+			"languageTags": [
+				"CS",
+				"S"
+			],
+			"skill": {
+				"perception": "+8"
+			},
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"frightened",
+				"stunned",
+				"unconscious"
+			],
+			"trait": [
+				{
+					"name": "Multiple Heads",
+					"entries": [
+						"The photohydra has five heads. Whenever the photohydra takes 25 or more damage in a single turn, one of its heads dies. If all its heads die, the photohydra dies. At the end of its turn, it grows two heads for each of its heads that died since its last turn, unless it has taken fire damage since its last turn. The photohydra regains 20 {@variantrule Hit Points|XPHB} for each head regrown in this way."
+					]
+				},
+				{
+					"name": "Reactive Heads (Hydra)",
+					"entries": [
+						"For each head the photohydra has beyond one, it gets an extra reaction."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The photohydra makes as many Bite attacks as it has heads."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 60 ft., one target. {@h}10 ({@damage 1d10 + 5}) piercing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"reaction": [
+				{
+					"name": "Vengeful Regrowth (Recharge 6).",
+					"entries": [
+						"{@actTrigger} The photohydra takes any damage besides fire damage. {@actResponse} The photohydra grows a new head and regains 20 {@variantrule Hit Points|XPHB}."
+					]
+				}
+			],
+			"damageTags": [
+				"P"
+			]
+		},
+		{
+			"name": "Isperia",
+			"isNamedCreature": true,
+			"source": "RavnicaHomebrew",
+			"page": 227,
+			"size": [
+				"G"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 330,
+				"formula": "20d20 + 120"
+			},
+			"speed": {
+				"walk": 40,
+				"fly": 60
+			},
+			"str": 22,
+			"dex": 14,
+			"con": 22,
+			"int": 23,
+			"wis": 28,
+			"cha": 20,
+			"save": {
+				"dex": "+9",
+				"con": "+13",
+				"int": "+13",
+				"wis": "+16"
+			},
+			"skill": {
+				"arcana": "+13",
+				"history": "+13",
+				"insight": "+16",
+				"perception": "+16"
+			},
+			"senses": [
+				"truesight 120 ft."
+			],
+			"passive": 26,
+			"immune": [
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"languages": [
+				"Common",
+				"Sphinx"
+			],
+			"cr": "24",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Isperia's innate spellcasting ability is Wisdom (spell save {@dc 24}). Isperia can innately cast the following spells requiring no material components:"
+					],
+					"displayAs": "action",
+					"will": [
+						"{@spell Detect Magic|XPHB}",
+						"{@spell Detect Thoughts|XPHB}",
+						"{@spell Dispel Magic|XPHB}",
+						"{@spell Guidance|XPHB}",
+						"{@spell Zone of Truth|XPHB}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell Hold Monster|XPHB}",
+							"{@spell Raulothim's Psychic Lance|FTD}",
+							"{@spell Silence|XPHB}",
+							"{@spell Synaptic Static|XPHB}"
+						],
+						"1e": [
+							"{@spell Antimagic Field|XPHB}",
+							"{@spell Befuddlement|XPHB}"
+						]
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Inscrutable",
+					"entries": [
+						"Isperia is immune to any effect that would sense her emotions or read her thoughts, as well as any divination spell that she refuses. Wisdom ({@skill Insight}) checks made to ascertain her intentions or sincerity have disadvantage."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If Isperia fails a saving throw, she can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"Isperia has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Isperia makes two claw attacks. She can cast a spell with a casting time of 1 action in place of one claw attack."
+					]
+				},
+				{
+					"name": "Bolt of Authority",
+					"entries": [
+						"{@atk rs} {@hit 15} to hit, range 120 ft., one target. {@h}5 ({@damage 3d6 + 9}) psychic damage. If the target is a creature, it can't take a reaction until the end of its next turn. Moreover, on its next turn, it must choose whether it gets a move, an action, or a bonus action; it gets only one of the three."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 13} to hit, reach 5 ft., one target. {@h}22 ({@damage 3d10 + 6}) slashing damage. If the target is a creature, it must succeed on a {@dc 24} Wisdom saving throw or take 14 ({@damage 4d6}) psychic damage after each attack it makes against Isperia before the start of her next turn."
+					]
+				},
+				{
+					"name": "Supreme Legal Authority",
+					"entries": [
+						"Isperia chooses up to three creatures she can see within 90 feet of her. Each target must succeed on a {@dc 24} Intelligence saving throw or Isperia chooses an action for that target: {@action Attack}, {@action Cast a Spell}, {@action Dash}, {@action Disengage}, {@action Dodge}, {@action Help}, {@action Hide}, {@action Ready}, {@action Search}, or {@action Use an Object}. The affected target can't take that action for 1 minute. At the end of each of the target's turns, it can end the effect on itself with a successful {@dc 24} Intelligence saving throw. A target that succeeds on the saving throw becomes immune to Isperia's Supreme Legal Authority for 24 hours."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Claw Attack",
+					"entries": [
+						"Isperia makes one claw attack."
+					]
+				},
+				{
+					"name": "Cast a Spell (Costs 2 Actions)",
+					"entries": [
+						"Isperia casts a spell of 3rd level or lower from her list of prepared spells, using a spell slot as normal."
+					]
+				},
+				{
+					"name": "Supreme Legal Authority (Costs 3 Actions)",
+					"entries": [
+						"Isperia uses Supreme Legal Authority."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances",
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"OTH"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"RA",
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"token": {
+				"name": "Isperia",
+				"source": "GGR"
+			},
+			"fluff": {
+				"name": "Isperia",
+				"source": "GGR",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"Isperia is the current guildmaster of the Azorius Senate. As a sphinx, she is aloof and values solitude above all. However, she has been forced to give up her privacy to deal with the increased crime and chaos on Ravnica.",
+											"Isperia is devoted to her guild's belief that law is the ultimate bulwark against chaos, and it is her steady hand that guides the Azorius through these uncertain times. As guildmaster, Isperia serves as the supreme judge, a role that takes advantage of her encyclopedic knowledge of Ravnica's labyrinthine legal system.",
+											"If an encounter turns violent, Isperia refrains from using lethal force if possible, preferring to subdue a wrongdoing so that the legal system can mete out justice."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/GGR/Isperia.webp"
+						},
+						"credit": "Scott M. Fischer"
+					}
+				]
+			},
+			"uniqueId": "d85724bb-7ab0-40d4-a8c8-f8867080a4c9",
+			"reaction": [
+				{
+					"name": "Protective Magic (3/Day).",
+					"entries": [
+						"Isperia casts Counterspell or Shield in response to the spell's trigger, using the same spellcasting ability as Spellcasting."
+					]
+				}
+			],
+			"damageTags": [
+				"S",
+				"Y"
+			],
+			"damageTagsSpell": [
+				"Y"
+			],
+			"savingThrowForced": [
+				"intelligence",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"constitution",
+				"intelligence",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Drake",
+			"source": "RavnicaHomebrew",
+			"page": 356,
+			"size": [
+				"L"
+			],
+			"type": "dragon",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				14
+			],
+			"hp": {
+				"average": 30,
+				"formula": "4d10 + 8"
+			},
+			"speed": {
+				"walk": 10,
+				"fly": 80
+			},
+			"str": 16,
+			"dex": 18,
+			"con": 15,
+			"int": 6,
+			"wis": 14,
+			"cha": 10,
+			"skill": {
+				"perception": "+6"
+			},
+			"passive": 16,
+			"cr": "2",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The drake makes two Rend attacks."
+					]
+				},
+				{
+					"name": "Rend",
+					"entries": [
+						"{@atkr m} {@hit 5}, reach 5 ft. {@h}11 ({@damage 2d6 + 4}) Slashing damage."
+					]
+				}
+			],
+			"environment": [
+				"coastal",
+				"grassland",
+				"hill",
+				"mountain"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/giant-eagle.mp3"
+			},
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MA"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"token": {
+				"name": "Giant Eagle",
+				"source": "XMM"
+			},
+			"fluff": {
+				"name": "Giant Eagle",
+				"source": "XMM",
+				"entries": [
+					{
+						"type": "section",
+						"name": "Animals",
+						"entries": [
+							"Use these stat blocks to represent the creatures they're named for or other similar creatures. For example, the {@creature Panther|XMM} stat block can also represent a mountain lion, while the {@creature Giant Goat|XMM} stat block might represent a buffalo. Any of these stat blocks might also serve as fantastical animals with distinctive names and cosmetic details unique to your D&D adventures."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/XMM/Eagle.webp"
+						},
+						"width": 1000,
+						"height": 501
+					},
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/XMM/Animals Hills and Mountains.webp"
+						},
+						"title": "A druid calls on animals of the hills and mountains to aid her cause",
+						"width": 2560,
+						"height": 1656
+					},
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/XMM/Animals Aquatic.webp"
+						},
+						"title": "Aquatic animals swim alongside a druid exploring the sea",
+						"width": 2560,
+						"height": 1657
+					},
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/XMM/Animals Rainforest.webp"
+						},
+						"title": "Inhabitants of the rain forest answer a druid's summons",
+						"width": 2550,
+						"height": 1650
+					}
+				]
+			},
+			"uniqueId": "b590001b-6375-4db8-8f93-9732ce6f80e4",
+			"trait": [
+				{
+					"name": "Flyby",
+					"entries": [
+						"The drake doesn't provoke opportunity attacks when it flies out of an enemy's reach."
+					]
+				}
+			],
+			"traitTags": [
+				"Flyby"
+			],
+			"damageTags": [
+				"S"
+			]
+		},
+		{
+			"name": "Performer Maestro",
+			"source": "RavnicaHomebrew",
+			"page": 237,
+			"referenceSources": [
+				"DrDe",
+				"FRAiF",
+				"LFL",
+				"EFA"
+			],
+			"size": [
+				"S",
+				"M"
+			],
+			"type": "humanoid",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				18
+			],
+			"hp": {
+				"average": 110,
+				"formula": "17d8 + 34"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"initiative": {
+				"proficiency": 1
+			},
+			"str": 12,
+			"dex": 18,
+			"con": 14,
+			"int": 13,
+			"wis": 14,
+			"cha": 19,
+			"save": {
+				"dex": "+7",
+				"cha": "+7"
+			},
+			"skill": {
+				"acrobatics": "+10",
+				"athletics": "+4",
+				"perception": "+5",
+				"performance": "+10",
+				"stealth": "+7"
+			},
+			"passive": 15,
+			"languages": [
+				"Common",
+				"Infernal"
+			],
+			"cr": "6",
+			"gear": [
+				"rapier|xphb"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The performer casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save {@dc 15}):"
+					],
+					"displayAs": "action",
+					"will": [
+						"{@spell Minor Illusion|XPHB}",
+						"{@spell Prestidigitation|XPHB}",
+						"{@spell Tasha's Mind Whip|TCE}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell Hold Person|XPHB} (level 3 version)",
+							"{@spell Tasha's Hideous Laughter|XPHB} (level 3 version)"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The performer makes three Rapier attacks."
+					]
+				},
+				{
+					"name": "Rapier",
+					"entries": [
+						"{@atkr m} {@hit 7}, reach 5 ft. {@h}8 ({@damage 1d8 + 4}) Piercing damage plus 7 ({@damage 2d6}) Psychic damage."
+					]
+				},
+				{
+					"name": "Beguiling Song",
+					"entries": [
+						"{@actSave wis} {@dc 15}, each creature in a 20-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} centered on a point within 120 feet. {@actSaveFail} 20 ({@damage 3d10 + 4}) Psychic damage, and the target has the {@condition Charmed|XPHB} condition until the end of the performer's next turn. {@actSaveSuccess} Half damage only."
+					]
+				}
+			],
+			"environment": [
+				"any"
+			],
+			"treasure": [
+				"implements",
+				"individual"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"I"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MA",
+				"MLW",
+				"AOE"
+			],
+			"conditionInflict": [
+				"charmed"
+			],
+			"conditionInflictSpell": [
+				"incapacitated",
+				"prone"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"token": {
+				"name": "Performer Maestro",
+				"source": "XMM"
+			},
+			"fluff": {
+				"name": "Performer Maestro",
+				"source": "XMM",
+				"entries": [
+					{
+						"type": "section",
+						"entries": [
+							"Maestros are headlining performers who enjoy considerable renown. They might be theaters' marquee actors, astonishing daredevils, or jesters experienced at entertaining fickle royals. Some share their techniques with apprentices, while others jealously guard their secrets."
+						]
+					},
+					{
+						"type": "section",
+						"name": "Performers",
+						"entries": [
+							"{@i Artists and Entertainers}",
+							{
+								"type": "list",
+								"style": "list-hang-notitle",
+								"items": [
+									{
+										"type": "item",
+										"name": "Habitat:",
+										"entry": "{@filter Any|bestiary|environment=any}"
+									},
+									{
+										"type": "item",
+										"name": "Treasure:",
+										"entry": "{@table Random Magic Items - Implements|XDMG|Implements}, Individual"
+									}
+								]
+							},
+							"From royal courts to village squares, skilled entertainers hone their talents and delight audiences. Some travel far, sharing tales and demonstrating mysterious arts. Others serve in the courts and theaters of great nations, cultivating celebrity and navigating the whims of patrons. Many hone professional secrets and magical flourishes, striving to make their performances truly unforgettable.",
+							"Use the following list of entertainers and roles to inspire the performers in your adventures:",
+							{
+								"type": "list",
+								"style": "list-no-bullets",
+								"columns": 3,
+								"items": [
+									"Acrobat",
+									"Actor",
+									"Aerialist",
+									"Animal trainer",
+									"Athlete",
+									"Burlesque artist",
+									"Busker",
+									"Circus performer",
+									"Comedian",
+									"Contortionist",
+									"Dancer",
+									"Daredevil",
+									"Jester",
+									"Juggler",
+									"Magician",
+									"Mentalist",
+									"Mime",
+									"Minstrel",
+									"Mourner",
+									"Oral historian",
+									"Poet",
+									"Puppeteer",
+									"Ritualist",
+									"Stage fighter",
+									"Storyteller",
+									"Throat singer",
+									"Town crier",
+									"Trick rider",
+									"Vocalist",
+									"Wrestler"
+								]
+							},
+							{
+								"type": "insetReadaloud",
+								"entries": [
+									{
+										"type": "quote",
+										"entries": [
+											"Welcome, one! Welcome, all! Welcome to the short, and welcome to the tall! Welcome angels, welcome fiends, welcome to all from walks between! Welcome to the Carnival!"
+										],
+										"by": "Tindal, Carnival Barker"
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/XMM/Performers.webp"
+						},
+						"credit": "Katerina Ladon",
+						"width": 2550,
+						"height": 1675
+					}
+				]
+			},
+			"uniqueId": "94aa8fa6-0996-491f-a246-603236652432",
+			"shortName": "perfomer",
+			"attachedItems": [
+				"rapier|phb"
+			],
+			"resist": [
+				"psychic"
+			],
+			"damageTags": [
+				"P",
+				"Y"
+			],
+			"damageTagsSpell": [
+				"Y"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"intelligence",
+				"wisdom"
+			]
+		},
+		{
+			"uniqueId": "8493dbd0-f599-4b50-99a7-e30ab8b5d0c9",
+			"name": "Massacre Girl",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "RavnicaHomebrew",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				20
+			],
+			"hp": {
+				"formula": "33d8 + 66",
+				"average": 214
+			},
+			"speed": {
+				"walk": 45,
+				"climb": 45
+			},
+			"str": 12,
+			"dex": 20,
+			"con": 14,
+			"int": 10,
+			"wis": 12,
+			"cha": 20,
+			"passive": 11,
+			"cr": "19",
+			"isNamedCreature": true,
+			"languages": [
+				"Common",
+				"Infernal"
+			],
+			"languageTags": [
+				"C",
+				"I"
+			],
+			"save": {
+				"dex": "+11",
+				"wis": "+7",
+				"cha": "+11"
+			},
+			"skill": {
+				"acrobatics": "+17",
+				"athletics": "+7",
+				"performance": "+17"
+			},
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"shortName": true,
+			"trait": [
+				{
+					"name": "Evasion",
+					"entries": [
+						"If Massacre Girl is subjected to an effect that allows her to make a Dexterity saving throw to take only half damage, Massacre Girl instead takes no damage if she succeeds on the saving throw, and only half damage if she fails."
+					]
+				},
+				{
+					"name": "Acrobatic Expertise",
+					"entries": [
+						"As long as Massacre Girl isn't {@condition Incapacitated|XPHB}, she cannot be {@condition grappled}, {@condition restrained}, or knocked {@condition prone}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack.",
+					"entries": [
+						"Massacre Girl makes four Bladed Chain attacks."
+					]
+				},
+				{
+					"name": "Bladed Chain",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 25 ft., one target. {@h}15 ({@damage 3d6 + 5}) slashing damage and if the target is a Large or smaller creature they are {@condition grappled} (escape {@dc 19}). Massacre Girl can have up to four Medium or smaller creatures {@condition grappled} this way at a time. One Large creature counts as two Medium creatures."
+					]
+				},
+				{
+					"name": "Whirlwind Massacre {@recharge 5}",
+					"entries": [
+						"{@actSave dex} {@dc 19}, each creature in a 30-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from Massacre Girl. {@actSaveFail} 70 ({@damage 20d6}) Slashing damage, and the target has the {@condition Prone|XPHB} condition. {@actSaveSuccess} Half damage only."
+					]
+				}
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"AOE"
+			],
+			"legendary": [
+				{
+					"name": "Chain Gang",
+					"entries": [
+						"{@actSave str} {@dc 19}, one creature {@condition grappled} by Massacre Girl. {@actSaveFail} The target is thrown at a point on the ground Massacre Girl can see within 40 feet of her. The target and each creature within 5 feet of the point takes 22 ({@damage 4d10}) bludgeoning damage. She then uses Whirling Leap."
+					]
+				},
+				{
+					"name": "Flay",
+					"entries": [
+						"Massacre Girl makes a Bladed Chain attack against each target in a 25-foot {@variantrule Cone [Area of Effect]|XPHB|Cone} in front of her. These attacks do an extra 7 ({@damage 2d6}) slashing damage but do not grapple."
+					]
+				},
+				{
+					"name": "Blood Surge",
+					"entries": [
+						"Each creature {@condition grappled} by Massacre Girl takes 11 ({@damage 2d10}) necrotic damage and she regains {@variantrule Hit Points|XPHB} equal to the total amount of necrotic damage dealt."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Whirling Leap",
+					"entries": [
+						"Massacre Girl jumps 20 feet in any direction without provoking opportunity attacks. If she has a creature {@condition grappled}, she can instead choose to jump to any point within 20 feet of a {@condition grappled} creature."
+					]
+				}
+			],
+			"senses": [
+				"darkvision 120 ft. (unimpeded by magical darkness)"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"traitTags": [
+				"Devil's Sight"
+			],
+			"damageTags": [
+				"B",
+				"N",
+				"S"
+			],
+			"savingThrowForced": [
+				"dexterity",
+				"strength"
+			]
+		},
+		{
+			"name": "Void Scavver",
+			"source": "RavnicaHomebrew",
+			"page": 49,
+			"referenceSources": [
+				"LoX"
+			],
+			"size": [
+				"H"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 157,
+				"formula": "15d12 + 60"
+			},
+			"speed": {
+				"walk": 0,
+				"swim": 40
+			},
+			"str": 22,
+			"dex": 16,
+			"con": 19,
+			"int": 4,
+			"wis": 13,
+			"cha": 5,
+			"skill": {
+				"perception": "+5",
+				"stealth": "+11"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 15,
+			"cr": "11",
+			"trait": [
+				{
+					"name": "Water Breathing",
+					"entries": [
+						"The void scavver can breathe only underwater."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Swallowing Bite",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 10 ft., one target. {@h}45 ({@damage 6d12 + 6}) piercing damage. If the target is a Large or smaller creature, it must succeed on a {@dc 16} Dexterity saving throw or be swallowed by the scavver. The scavver can have one creature swallowed at a time.",
+						"A swallowed creature is {@condition blinded} and {@condition restrained}, has {@quickref Cover||3||total cover} against attacks and other effects outside the scavver, and takes 11 ({@damage 2d10}) acid damage at the start of each of the scavver's turns from the digestive juices in the scavver's gullet.",
+						"If the scavver takes 25 damage or more on a single turn from a creature inside it, the scavver must succeed on a {@dc 20} Constitution saving throw at the end of that turn or regurgitate the swallowed creature, which falls {@condition prone} in a space within 10 feet of the scavver. If the scavver dies, a swallowed creature is no longer {@condition restrained} by it and can escape from the corpse by using 10 feet of movement, exiting {@condition prone}."
+					]
+				},
+				{
+					"name": "Mesmerizing Lure",
+					"entries": [
+						"The scaver emanates a transfixing light from its eye in a 150-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSave wis} {@dc 16}, any creature in the emanation. {@actSaveFail} The target is {@condition charmed} until the end of the scaver's next turn. While {@condition charmed} this way the target is {@condition incapacitated} and must spend all its movement to move directly towards the scaver."
+					]
+				}
+			],
+			"traitTags": [
+				"Unusual Nature",
+				"Water Breathing"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Swallow"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"blinded",
+				"charmed",
+				"incapacitated",
+				"restrained"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"token": {
+				"name": "Void Scavver",
+				"source": "BAM"
+			},
+			"fluff": {
+				"name": "Void Scavver",
+				"source": "BAM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"Void scavvers are 20 feet long. Each one is a solitary menace with a pitch-black hide. While most other scavvers are content to feed on kitchen scraps, a void scavver goes after the cook.",
+							"A void scavver can emit an invisible ray from its eye that causes its target to feel fear even more intense than what it might normally experience given the creature's size and nature."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/BAM/Void Scavver.webp"
+						},
+						"width": 1695,
+						"height": 619
+					}
+				]
+			},
+			"uniqueId": "31c82eb4-c9eb-4e04-81e9-9e9a2ddaa47b",
+			"shortName": "scaver",
+			"damageTags": [
+				"A",
+				"P"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Pit Fiend",
+			"group": [
+				"Devils"
+			],
+			"source": "RavnicaHomebrew",
+			"page": 243,
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"devil"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				21
+			],
+			"hp": {
+				"average": 337,
+				"formula": "27d10 + 189"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 60
+			},
+			"initiative": {
+				"proficiency": 2
+			},
+			"str": 26,
+			"dex": 14,
+			"con": 24,
+			"int": 22,
+			"wis": 18,
+			"cha": 24,
+			"save": {
+				"dex": "+8",
+				"wis": "+10"
+			},
+			"skill": {
+				"perception": "+10",
+				"persuasion": "+19"
+			},
+			"senses": [
+				"Truesight 120 ft."
+			],
+			"passive": 20,
+			"resist": [
+				"cold"
+			],
+			"immune": [
+				"fire",
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"Infernal; telepathy 120 ft."
+			],
+			"cr": "20",
+			"spellcasting": [
+				{
+					"name": "Hellfire Spellcasting {@recharge 4}",
+					"type": "spellcasting",
+					"headerEntries": [
+						"The pit fiend casts {@spell Fireball|XPHB} (level 5 version) twice, requiring no Material components and using Charisma as the spellcasting ability (spell save {@dc 21}). It can replace one {@spell Fireball|XPHB} with {@spell Hold Monster|XPHB} (level 7 version) or {@spell Wall of Fire|XPHB}."
+					],
+					"recharge": {
+						"4": [
+							"{@spell Fireball|XPHB} (level 5 version)",
+							"{@spell Hold Monster|XPHB} (level 7 version)",
+							"{@spell Wall of Fire|XPHB}"
+						]
+					},
+					"ability": "cha",
+					"displayAs": "action",
+					"hidden": [
+						"recharge"
+					]
+				}
+			],
+			"trait": [
+				{
+					"name": "Diabolical Restoration",
+					"entries": [
+						"If the pit fiend dies outside the Nine Hells, its body disappears in sulfurous smoke, and it gains a new body instantly, reviving with all its {@variantrule Hit Points|XPHB} somewhere in the Nine Hells."
+					]
+				},
+				{
+					"name": "Fear Aura",
+					"entries": [
+						"The pit fiend emanates an aura in a 20-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} while it doesn't have the {@condition Incapacitated|XPHB} condition. {@actSave wis} {@dc 21}, any enemy that starts its turn in the aura. {@actSaveFail} The target has the {@condition Frightened|XPHB} condition until the start of its next turn. {@actSaveSuccess} The target is immune to this pit fiend's aura for 24 hours."
+					]
+				},
+				{
+					"name": "Legendary Resistance (4/Day)",
+					"entries": [
+						"If the pit fiend fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The pit fiend has {@variantrule Advantage|XPHB} on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The pit fiend makes one Bite attack, two Devilish Claw attacks, and one Fiery Mace attack."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atkr m} {@hit 14}, reach 10 ft. {@h}18 ({@damage 3d6 + 8}) Piercing damage. If the target is a creature, it must make the following saving throw. {@actSave con} {@dc 21}. {@actSaveFail} The target has the {@condition Poisoned|XPHB} condition. While {@condition Poisoned|XPHB}, the target can't regain {@variantrule Hit Points|XPHB} and takes 21 ({@damage 6d6}) Poison damage at the start of each of its turns, and it repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically."
+					]
+				},
+				{
+					"name": "Devilish Claw",
+					"entries": [
+						"{@atkr m} {@hit 14}, reach 10 ft. {@h}26 ({@damage 4d8 + 8}) Necrotic damage."
+					]
+				},
+				{
+					"name": "Fiery Mace",
+					"entries": [
+						"{@atkr m} {@hit 14}, reach 10 ft. {@h}22 ({@damage 4d6 + 8}) Force damage plus 21 ({@damage 6d6}) Fire damage."
+					]
+				}
+			],
+			"environment": [
+				"planar, nine hells"
+			],
+			"treasure": [
+				"relics"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/pit-fiend.mp3"
+			},
+			"traitTags": [
+				"Legendary Resistances",
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"I",
+				"TP"
+			],
+			"damageTags": [
+				"F",
+				"I",
+				"N",
+				"O",
+				"P"
+			],
+			"damageTagsSpell": [
+				"F"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MA",
+				"MLW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"frightened",
+				"poisoned"
+			],
+			"conditionInflictSpell": [
+				"paralyzed"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity",
+				"wisdom"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"token": {
+				"name": "Pit Fiend",
+				"source": "XMM"
+			},
+			"fluff": {
+				"name": "Pit Fiend",
+				"source": "XMM",
+				"entries": [
+					{
+						"type": "section",
+						"name": "Pit Fiend",
+						"entries": [
+							"{@i Devil of Domination}",
+							{
+								"type": "list",
+								"style": "list-hang-notitle",
+								"items": [
+									{
+										"type": "item",
+										"name": "Habitat:",
+										"entry": "{@filter Planar (Nine Hells)|bestiary|environment=planar, nine hells}"
+									},
+									{
+										"type": "item",
+										"name": "Treasure:",
+										"entry": "{@table Random Magic Items - Relics|XDMG|Relics}"
+									}
+								]
+							},
+							"Masterminds of the Nine Hells and generals of infernal legions, pit fiends seek conquests across the planes of existence. More than warmongers, these diabolical tyrants concoct intricate plots that play out among fiendish battlefields, infernal politics, and mortal conspiracies.",
+							"Pit fiends are the nobility of the Nine Hells, and many rule Lower Planar fiefdoms, doomed mortal worlds, and other infernal redoubts. Most serve archdevils of the Nine Hells as they pursue their own ambitions. Ranks of lesser devils obey pit fiends, but these cunning tyrants remain on guard against betrayal from their servants.",
+							"Smoldering with the evil of the Nine Hells, pit fiends strike fear in creatures with their mere presence. Despite their size and incredible physical and magical might, pit fiends are as likely to try to corrupt foes as they are to destroy them outright. Pit fiends' arrogance can lead them to underestimate mortal foes—a failing that can lead to their downfall."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/XMM/Pit Fiend.webp"
+						},
+						"credit": "Eric Belisle",
+						"width": 1289,
+						"height": 1464
+					}
+				]
+			},
+			"uniqueId": "1efa9f13-e79c-4398-9998-321f904a6de8"
+		},
+		{
+			"name": "Niv-Mizzet",
+			"group": [
+				"Chromatic Dragon"
+			],
+			"source": "RavnicaHomebrew",
+			"page": 168,
+			"size": [
+				"G"
+			],
+			"type": {
+				"type": "dragon",
+				"tags": [
+					"chromatic"
+				]
+			},
+			"alignment": [
+				"C",
+				"N"
+			],
+			"alignmentPrefix": "typically ",
+			"ac": [
+				{
+					"ac": 22,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "19d20 + 171",
+				"average": 370
+			},
+			"speed": {
+				"walk": 60,
+				"fly": 120
+			},
+			"str": 29,
+			"dex": 14,
+			"con": 29,
+			"int": 30,
+			"wis": 17,
+			"cha": 26,
+			"save": {
+				"con": "+18",
+				"wis": "+13",
+				"cha": "+16",
+				"int": "+18"
+			},
+			"skill": {
+				"intimidation": "+16",
+				"perception": "+11",
+				"arcana": "+18",
+				"insight": "+11"
+			},
+			"senses": [
+				"truesight 120 ft."
+			],
+			"passive": 21,
+			"immune": [
+				"fire",
+				"lightning"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"poisoned"
+			],
+			"languages": [
+				"Common",
+				"Draconic"
+			],
+			"cr": "27",
+			"trait": [
+				{
+					"name": "Chromatic Awakening (Recharges after a Short or Long Rest)",
+					"entries": [
+						"If Niv-Mizzet would be reduced to 0 hit points, his current hit point total instead resets to 425 hit points, he recharges his Breath Weapon, and he regains any expended uses of Legendary Resistance. Additionally, he can now use the options in the \"Mythic Actions\" section for 1 hour. Award a party an additional 105,000 XP (210,000 XP total) for defeating the greatwyrm after its Chromatic Awakening activates."
+					]
+				},
+				{
+					"name": "Legendary Resistance (4/Day)",
+					"entries": [
+						"If Niv-Mizzet fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Locus of the Firemind.",
+					"entries": [
+						"Niv-Mizzet can maintain {@status Concentration|XPHB} on two different spells at the same time. In addition, he has advantage on saving throws to maintain {@status Concentration|XPHB} on spells."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"Niv-Mizzet has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Master Chemister.",
+					"entries": [
+						"When Niv-Mizzet casts a spell that deals damage, he can change the spell's damage to cold, fire, force, lightning, or thunder."
+					]
+				}
+			],
+			"mythicHeader": [
+				"If the Niv-Mizzet's Chromatic Awakening trait has activated in the last hour, he can use the options below as legendary actions."
+			],
+			"dragonCastingColor": "red",
+			"dragonAge": "greatwyrm",
+			"traitTags": [
+				"Legendary Resistances",
+				"Magic Resistance",
+				"Unusual Nature"
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"Breath Weapon",
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"token": {
+				"name": "Red Greatwyrm",
+				"source": "FTD"
+			},
+			"fluff": {
+				"name": "Red Greatwyrm",
+				"source": "FTD",
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/FTD/Red Greatwyrm.webp"
+						},
+						"credit": "Svetlin Velinov",
+						"width": 1700,
+						"height": 1137
+					}
+				],
+				"entries": [
+					"The most ancient chromatic dragons, who have survived over twelve hundred years of mortal life and acquired vast hoards worth millions of gold pieces, can achieve a form of apotheosis, reaching a level of power approaching that of Tiamat's mighty aspect. The competitive avarice of dragonkind and the interference of adventurers prevent most dragons from attaining this level of power. But a chromatic dragon who can outwit all rivals and overcome all potential thieves can rise to become one of the mightiest of dragons.",
+					"Often a chromatic greatwyrm's ascension involves fusing the power of a single dragon's echoes across different worlds of the Material Plane. The black greatwyrm Chronepsis, for example, is said to have stalked multiple worlds and devoured many of his echoes before withdrawing to a planar lair in the Outlands. The red greatwyrm Ashardalon worked with a balor to ritually drain the power of his echoes, then infused their power into himself by implanting the balor where his heart had been.",
+					"In both size and power, chromatic greatwyrms exceed even ancient dragons. The energy of their breath weapons courses over their bodies and glows under their scales, and elemental forces rage around them when they exert their wrath. They no longer need to eat or drink, as their vast hoards magically sustain them. And their power can raze a city to the ground, destroying buildings and defenders alike."
+				]
+			},
+			"uniqueId": "754df0e0-a068-4c99-aa4f-83d9c2ab48ec",
+			"isNamedCreature": true,
+			"resist": [
+				"cold",
+				"psychic",
+				"thunder"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Niv-Mizzet casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 26}):"
+					],
+					"displayAs": "action",
+					"will": [
+						"{@spell Detect Magic|XPHB}",
+						"{@spell Dispel Magic|XPHB}",
+						"{@spell Fireball|XPHB}",
+						"{@spell Lightning Bolt|XPHB}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell Chain Lightning|XPHB}",
+							"{@spell Dimension Door|XPHB}",
+							"{@spell Disintegrate|XPHB}",
+							"{@spell Wall of Force|XPHB}"
+						],
+						"1e": [
+							"{@spell Maze|XPHB}",
+							"{@spell Power Word Stun|XPHB}",
+							"{@spell Reverse Gravity|XPHB}",
+							"{@spell Time Stop|XPHB}"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"action": [
+				{
+					"name": "Multiattack.",
+					"entries": [
+						"Niv-Mizzet makes one Bite attack and two Claw attacks."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 17} to hit, reach 5 ft., one target. {@h}20 ({@damage 2d10 + 9}) piercing damage, plus 13 ({@damage 2d12}) fire damage."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 17} to hit, reach 10 ft., one target. {@h}18 ({@damage 2d8 + 9}) slashing damage."
+					]
+				},
+				{
+					"name": "Breath Weapon {@recharge 5}",
+					"entries": [
+						"{@actSave dex} {@dc 24}, each creature in a 90-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail} 46 ({@damage 13d6}) Fire damage and 46 ({@damage 13d6}) Lightning damage. {@actSaveSuccess} Half damage.\""
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 17} to hit, reach 20 ft., one target. {@h}18 ({@damage 2d8 + 9}) bludgeoning damage. If the target is a creature, it must make the following saving throw. {@actSave str} {@dc 25}. {@actSaveFail} The target is knocked {@condition prone}."
+					]
+				}
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"reaction": [
+				{
+					"name": "Protective Magic (3/Day)",
+					"entries": [
+						"Niv-Mizzet casts {@spell Counterspell|XPHB} or {@spell Shield|XPHB} in response to the spell's trigger, using the same spellcasting ability as Spellcasting."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Attack",
+					"entries": [
+						"Niv-Mizzet makes one attack."
+					]
+				},
+				{
+					"name": "Spellcasting",
+					"entries": [
+						"Niv-Mizzet uses Spellcasting."
+					]
+				}
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"L",
+				"P",
+				"S"
+			],
+			"damageTagsSpell": [
+				"F",
+				"L",
+				"O"
+			],
+			"savingThrowForced": [
+				"dexterity",
+				"strength"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity"
+			]
+		},
+		{
+			"name": "Trostani",
+			"isNamedCreature": true,
+			"source": "RavnicaHomebrew",
+			"page": 252,
+			"size": [
+				"L"
+			],
+			"type": "fey",
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 445,
+				"formula": "33d10 + 264"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 19,
+			"dex": 26,
+			"con": 26,
+			"int": 16,
+			"wis": 30,
+			"cha": 25,
+			"save": {
+				"con": "+16",
+				"wis": "+18",
+				"cha": "+15"
+			},
+			"skill": {
+				"arcana": "+11",
+				"insight": "+18",
+				"nature": "+11",
+				"persuasion": "+15",
+				"perception": "+26"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 36,
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"frightened",
+				"grappled",
+				"stunned",
+				"unconscious"
+			],
+			"languages": [
+				"Common",
+				"Druidic",
+				"Elvish",
+				"Sylvan"
+			],
+			"cr": "25",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Trostani's innate spellcasting ability is Wisdom (spell save {@dc 26}). She can innately cast the following spells, requiring no material components:"
+					],
+					"displayAs": "action",
+					"will": [
+						"{@spell Calm Emotions|XPHB}",
+						"{@spell Dispel Magic|XPHB}",
+						"{@spell Druidcraft|XPHB}",
+						"{@spell Lesser Restoration|XPHB}",
+						"{@spell Suggestion|XPHB}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell Greater Restoration|XPHB}",
+							"{@spell Plant Growth|XPHB}",
+							"{@spell Spike Growth|XPHB}"
+						],
+						"1e": [
+							"{@spell Mass Heal|XPHB}",
+							"{@spell Mass Suggestion|XPHB}",
+							"{@spell Resurrection|XPHB}"
+						]
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If Trostani fails a saving throw, she can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"Trostani has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Speak with Beasts and Plants",
+					"entries": [
+						"Trostani can communicate with beasts and plants as if they shared a language."
+					]
+				},
+				{
+					"name": "Tree Stride",
+					"entries": [
+						"Once on her turn, Trostani can use 10 feet of her movement to step magically into one living tree within her reach and emerge from a second living tree within 60 feet of the first tree, appearing in an unoccupied space within 5 feet of the second tree. Both trees must be Large or bigger."
+					]
+				},
+				{
+					"name": "Worldsoul Attunement",
+					"entries": [
+						"Trostani has a mental link to every other Selesnyan dryad on the same place of existence as her. She can read the thoughts of, communicate telepathically with, and perceive through the senses of any dryad which she has a link to (no action required). Each dryad is considered {@condition Charmed|XPHB} by Trostani and does its best to obey her mental commands."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Trostani makes three attacks, using Constricting Vine and Touch of Order in any combination. She can replace one of these attacks with a use of Spellcasting."
+					]
+				},
+				{
+					"name": "Constricting Vine",
+					"entries": [
+						"{@atk mw} {@hit 16} to hit, reach 20 ft., one target. {@h}21 ({@damage 3d8 + 8}) bludgeoning damage and if the target is Huge or smaller they are {@condition grappled} (escape {@dc 24}). While {@condition grappled} this way the target is {@condition restrained} and takes {@damage 3d8} bludgeoning damage at the start of each of their turns."
+					]
+				},
+				{
+					"name": "Wrath of Mat'Selesnya {@recharge 5}",
+					"entries": [
+						"Trostani conjures a momentary whirl of branches and vines at a point she can see within 60 feet of her. Each creature in a 30-foot cube on that point must make a {@dc 26} Dexterity saving throw, taking 35 ({@damage 10d6}) bludgeoning damage and 35 ({@damage 10d6}) slashing damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances",
+				"Magic Resistance",
+				"Magic Weapons",
+				"Tree Stride"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"DU",
+				"E",
+				"S"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"AOE"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"token": {
+				"name": "Trostani",
+				"source": "GGR"
+			},
+			"fluff": {
+				"name": "Trostani",
+				"source": "GGR",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"The Selesnya guildmaster is an amalgamation of three dryads in body, will, and soul. Each dryad's body extends from a central trunk, so while they possess independent minds, they share a single name-Trostani and a single life force. Usually Trostani communicates the will of the Worldsoul with one voice, but she retains three distinct personalities that embody the three parts of the Selesnyan ideal: order, life, and harmony. In the midst of increasing tensions on Ravnica, the three personalities have recently been at odds over how best to navigate the conclave through such difficult times.",
+											"Trostani spends most of her time in the towering tree of Vitu-Ghazi, the Selesnya guildhall. There she communes with Mat'Selesnya and with the dryads who lead individual Selesnya communities across Ravnica."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/GGR/Trostani.webp"
+						},
+						"credit": "Chippy",
+						"width": 805,
+						"height": 700
+					}
+				]
+			},
+			"uniqueId": "5cf45941-13f7-4ab7-b5af-fc43bef03019",
+			"conditionInflict": [
+				"charmed",
+				"restrained"
+			],
+			"legendary": [
+				{
+					"name": "Touch of Order",
+					"entries": [
+						"Trostani makes a melee spell attack using her Wisdom against one creature she can see within 5 ft., {@h}40 ({@damage 6d8 + 13}) radiant damage, and Trostani can choose one magic item she can see in the target's possession. Unless it's an artifact, the item's magic is suppressed until the start of Trostani's next turn."
+					]
+				},
+				{
+					"name": "Touch of Life",
+					"entries": [
+						"Trostani touches one creature within reach to restore 70 {@variantrule Hit Points|XPHB} and end all conditions affecting it."
+					]
+				},
+				{
+					"name": "Voice of Harmony",
+					"entries": [
+						"{@actSave Wis} one creature within 60 feet that can hear Trostani {@actSaveFail} The target is {@condition Charmed|XPHB} until the end of their next turn or until another creature uses their action to shake them. While {@condition Charmed|XPHB} this way the target's speed is 0."
+					]
+				}
+			],
+			"damageTags": [
+				"B",
+				"R",
+				"S"
+			],
+			"damageTagsSpell": [
+				"P"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"wisdom"
+			]
+		}
+	]
+}
