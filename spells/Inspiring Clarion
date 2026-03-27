@@ -1,0 +1,41 @@
+{
+	"name": "Inspiring Clarion",
+	"level": 4,
+	"school": "V",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "self"
+		}
+	},
+	"duration": [
+		{
+			"type": "instant"
+		}
+	],
+	"classes": {
+		"fromClassList": []
+	},
+	"entries": [
+		"Choose any number of creatures in a 30-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation}. Each of those creatures gain {@dice 3d10} {@variantrule Temporary Hit Points|XPHB} and {@variantrule Advantage|XPHB} on all attack rolls until the end of your next turn. Each other creature in the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} makes a Constitution saving throw. On a failed save, a creature takes {@damage 3d10} Thunder damage, is pushed 10 feet away from you, and becomes {@condition Deafened|XPHB} until the end of your next turn . On a successful save, a creature takes half as much damage only."
+	],
+	"source": "RavnicaHomebrew",
+	"subschools": [
+		"Boros"
+	],
+	"conditionInflict": [
+		"deafened"
+	],
+	"backgrounds": [
+		{
+			"name": "Boros Legionnaire",
+			"source": "GGR"
+		}
+	]
+}
