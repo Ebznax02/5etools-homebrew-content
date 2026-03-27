@@ -1,0 +1,65 @@
+{
+	"name": "Regenesis",
+	"source": "RavnicaHomebrew",
+	"referenceSources": [
+		"UtHftLH"
+	],
+	"level": 2,
+	"school": "T",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "touch"
+		}
+	},
+	"components": {
+		"v": true,
+		"s": true
+	},
+	"duration": [
+		{
+			"type": "timed",
+			"duration": {
+				"type": "minute",
+				"amount": 1
+			},
+			"concentration": true
+		}
+	],
+	"entries": [
+		"A creature you touch becomes imbued with regenerative magic. They regain a number of {@variantrule Hit Points|XPHB} equal to {@dice 1d8} plus your spellcasting ability modifier. Additionally, until the spell ends the creature regain a number of {@variantrule Hit Points|XPHB} equal to {@dice 1d8} plus your spellcasting ability modifier at the start of each of its turns if it begins its turn {@status Bloodied|XPHB}. "
+	],
+	"entriesHigherLevel": [
+		{
+			"type": "entries",
+			"name": "Using a Higher-Level Spell Slot",
+			"entries": [
+				"The healing increases by {@scaledice 1d8|1-9|2d8} for each spell slot level above 2."
+			]
+		}
+	],
+	"miscTags": [
+		"HL"
+	],
+	"areaTags": [
+		"ST"
+	],
+	"classes": {
+		"fromClassList": []
+	},
+	"backgrounds": [
+		{
+			"name": "Simic Scientist",
+			"source": "GGR"
+		}
+	],
+	"subschools": [
+		"Simic"
+	]
+}
