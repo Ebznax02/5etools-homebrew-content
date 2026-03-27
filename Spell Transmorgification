@@ -1,0 +1,36 @@
+{
+	"name": "Spell Transmorgification",
+	"level": 3,
+	"school": "T",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "feet",
+			"amount": 60
+		}
+	},
+	"duration": [
+		{
+			"type": "instant"
+		}
+	],
+	"classes": {
+		"fromClassList": []
+	},
+	"entries": [
+		"You attempt to creatively interrupt a creature in the process of casting a spell. The creature makes an Intelligence saving throw. On a failed save, the spell is replaced with a spell of equal level that you have prepared. The new spell uses the slot level, spell save DC, spell attack bonus, and spellcasting ability of the targeted caster and has the same targets as the replaced spell (even if under normal circumstances those targets are impossible). If the new spell requires {@status Concentration|XPHB}, the targeted caster is now maintaining {@status Concentration|XPHB} on that spell. "
+	],
+	"source": "RavnicaHomebrew",
+	"subschools": [
+		"Izzet League"
+	],
+	"components": {
+		"s": true
+	}
+}
