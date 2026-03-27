@@ -1,0 +1,255 @@
+{
+	"name": "Trostani",
+	"isNamedCreature": true,
+	"source": "RavnicaHomebrew",
+	"page": 252,
+	"size": [
+		"L"
+	],
+	"type": "fey",
+	"alignment": [
+		"N",
+		"G"
+	],
+	"ac": [
+		{
+			"ac": 17,
+			"from": [
+				"natural armor"
+			]
+		}
+	],
+	"hp": {
+		"average": 445,
+		"formula": "33d10 + 264"
+	},
+	"speed": {
+		"walk": 30
+	},
+	"str": 19,
+	"dex": 26,
+	"con": 26,
+	"int": 16,
+	"wis": 30,
+	"cha": 25,
+	"save": {
+		"con": "+16",
+		"wis": "+18",
+		"cha": "+15"
+	},
+	"skill": {
+		"arcana": "+11",
+		"insight": "+18",
+		"nature": "+11",
+		"persuasion": "+15",
+		"perception": "+26"
+	},
+	"senses": [
+		"darkvision 120 ft."
+	],
+	"passive": 36,
+	"conditionImmune": [
+		"blinded",
+		"charmed",
+		"deafened",
+		"frightened",
+		"grappled",
+		"stunned",
+		"unconscious"
+	],
+	"languages": [
+		"Common",
+		"Druidic",
+		"Elvish",
+		"Sylvan"
+	],
+	"cr": "25",
+	"spellcasting": [
+		{
+			"name": "Spellcasting",
+			"headerEntries": [
+				"Trostani's innate spellcasting ability is Wisdom (spell save {@dc 26}). She can innately cast the following spells, requiring no material components:"
+			],
+			"displayAs": "action",
+			"will": [
+				"{@spell Calm Emotions|XPHB}",
+				"{@spell Dispel Magic|XPHB}",
+				"{@spell Druidcraft|XPHB}",
+				"{@spell Lesser Restoration|XPHB}",
+				"{@spell Suggestion|XPHB}"
+			],
+			"daily": {
+				"3e": [
+					"{@spell Greater Restoration|XPHB}",
+					"{@spell Plant Growth|XPHB}",
+					"{@spell Spike Growth|XPHB}"
+				],
+				"1e": [
+					"{@spell Mass Heal|XPHB}",
+					"{@spell Mass Suggestion|XPHB}",
+					"{@spell Resurrection|XPHB}"
+				]
+			},
+			"ability": "wis",
+			"type": "spellcasting"
+		}
+	],
+	"trait": [
+		{
+			"name": "Legendary Resistance (3/Day)",
+			"entries": [
+				"If Trostani fails a saving throw, she can choose to succeed instead."
+			]
+		},
+		{
+			"name": "Magic Resistance",
+			"entries": [
+				"Trostani has advantage on saving throws against spells and other magical effects."
+			]
+		},
+		{
+			"name": "Speak with Beasts and Plants",
+			"entries": [
+				"Trostani can communicate with beasts and plants as if they shared a language."
+			]
+		},
+		{
+			"name": "Tree Stride",
+			"entries": [
+				"Once on her turn, Trostani can use 10 feet of her movement to step magically into one living tree within her reach and emerge from a second living tree within 60 feet of the first tree, appearing in an unoccupied space within 5 feet of the second tree. Both trees must be Large or bigger."
+			]
+		},
+		{
+			"name": "Worldsoul Attunement",
+			"entries": [
+				"Trostani has a mental link to every other Selesnyan dryad on the same place of existence as her. She can read the thoughts of, communicate telepathically with, and perceive through the senses of any dryad which she has a link to (no action required). Each dryad is considered {@condition Charmed|XPHB} by Trostani and does its best to obey her mental commands."
+			]
+		}
+	],
+	"action": [
+		{
+			"name": "Multiattack",
+			"entries": [
+				"Trostani makes three attacks, using Constricting Vine and Touch of Order in any combination. She can replace one of these attacks with a use of Spellcasting."
+			]
+		},
+		{
+			"name": "Constricting Vine",
+			"entries": [
+				"{@atk mw} {@hit 16} to hit, reach 20 ft., one target. {@h}21 ({@damage 3d8 + 8}) bludgeoning damage and if the target is Huge or smaller they are {@condition grappled} (escape {@dc 24}). While {@condition grappled} this way the target is {@condition restrained} and takes {@damage 3d8} bludgeoning damage at the start of each of their turns."
+			]
+		},
+		{
+			"name": "Wrath of Mat'Selesnya {@recharge 5}",
+			"entries": [
+				"Trostani conjures a momentary whirl of branches and vines at a point she can see within 60 feet of her. Each creature in a 30-foot cube on that point must make a {@dc 26} Dexterity saving throw, taking 35 ({@damage 10d6}) bludgeoning damage and 35 ({@damage 10d6}) slashing damage on a failed save, or half as much damage on a successful one."
+			]
+		}
+	],
+	"traitTags": [
+		"Legendary Resistances",
+		"Magic Resistance",
+		"Magic Weapons",
+		"Tree Stride"
+	],
+	"senseTags": [
+		"SD"
+	],
+	"actionTags": [
+		"Multiattack"
+	],
+	"languageTags": [
+		"C",
+		"DU",
+		"E",
+		"S"
+	],
+	"spellcastingTags": [
+		"O"
+	],
+	"miscTags": [
+		"MW",
+		"RCH",
+		"AOE"
+	],
+	"hasFluff": true,
+	"hasFluffImages": true,
+	"token": {
+		"name": "Trostani",
+		"source": "GGR"
+	},
+	"fluff": {
+		"name": "Trostani",
+		"source": "GGR",
+		"entries": [
+			{
+				"type": "entries",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"The Selesnya guildmaster is an amalgamation of three dryads in body, will, and soul. Each dryad's body extends from a central trunk, so while they possess independent minds, they share a single name-Trostani and a single life force. Usually Trostani communicates the will of the Worldsoul with one voice, but she retains three distinct personalities that embody the three parts of the Selesnyan ideal: order, life, and harmony. In the midst of increasing tensions on Ravnica, the three personalities have recently been at odds over how best to navigate the conclave through such difficult times.",
+									"Trostani spends most of her time in the towering tree of Vitu-Ghazi, the Selesnya guildhall. There she communes with Mat'Selesnya and with the dryads who lead individual Selesnya communities across Ravnica."
+								]
+							}
+						]
+					}
+				]
+			}
+		],
+		"images": [
+			{
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "bestiary/GGR/Trostani.webp"
+				},
+				"credit": "Chippy",
+				"width": 805,
+				"height": 700
+			}
+		]
+	},
+	"conditionInflict": [
+		"charmed",
+		"restrained"
+	],
+	"legendary": [
+		{
+			"name": "Touch of Order",
+			"entries": [
+				"Trostani makes a melee spell attack using her Wisdom against one creature she can see within 5 ft., {@h}40 ({@damage 6d8 + 13}) radiant damage, and Trostani can choose one magic item she can see in the target's possession. Unless it's an artifact, the item's magic is suppressed until the start of Trostani's next turn."
+			]
+		},
+		{
+			"name": "Touch of Life",
+			"entries": [
+				"Trostani touches one creature within reach to restore 70 {@variantrule Hit Points|XPHB} and end all conditions affecting it."
+			]
+		},
+		{
+			"name": "Voice of Harmony",
+			"entries": [
+				"{@actSave Wis} one creature within 60 feet that can hear Trostani {@actSaveFail} The target is {@condition Charmed|XPHB} until the end of their next turn or until another creature uses their action to shake them. While {@condition Charmed|XPHB} this way the target's speed is 0."
+			]
+		}
+	],
+	"damageTags": [
+		"B",
+		"R",
+		"S"
+	],
+	"damageTagsSpell": [
+		"P"
+	],
+	"savingThrowForced": [
+		"dexterity"
+	],
+	"savingThrowForcedSpell": [
+		"charisma",
+		"wisdom"
+	]
+}
