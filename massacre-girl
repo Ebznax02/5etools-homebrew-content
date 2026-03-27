@@ -1,0 +1,143 @@
+{
+	"name": "Massacre Girl",
+	"size": [
+		"M"
+	],
+	"type": "humanoid",
+	"source": "RavnicaHomebrew",
+	"alignment": [
+		"C",
+		"E"
+	],
+	"ac": [
+		20
+	],
+	"hp": {
+		"formula": "33d8 + 66",
+		"average": 214
+	},
+	"speed": {
+		"walk": 45,
+		"climb": 45
+	},
+	"str": 12,
+	"dex": 20,
+	"con": 14,
+	"int": 10,
+	"wis": 12,
+	"cha": 20,
+	"passive": 11,
+	"cr": "19",
+	"isNamedCreature": true,
+	"languages": [
+		"Common",
+		"Infernal"
+	],
+	"languageTags": [
+		"C",
+		"I"
+	],
+	"save": {
+		"dex": "+11",
+		"wis": "+7",
+		"cha": "+11"
+	},
+	"skill": {
+		"acrobatics": "+17",
+		"athletics": "+7",
+		"performance": "+17"
+	},
+	"conditionImmune": [
+		"charmed",
+		"frightened"
+	],
+	"shortName": true,
+	"trait": [
+		{
+			"name": "Evasion",
+			"entries": [
+				"If Massacre Girl is subjected to an effect that allows her to make a Dexterity saving throw to take only half damage, Massacre Girl instead takes no damage if she succeeds on the saving throw, and only half damage if she fails."
+			]
+		},
+		{
+			"name": "Acrobatic Expertise",
+			"entries": [
+				"As long as Massacre Girl isn't {@condition Incapacitated|XPHB}, she cannot be {@condition grappled}, {@condition restrained}, or knocked {@condition prone}."
+			]
+		}
+	],
+	"action": [
+		{
+			"name": "Multiattack.",
+			"entries": [
+				"Massacre Girl makes four Bladed Chain attacks."
+			]
+		},
+		{
+			"name": "Bladed Chain",
+			"entries": [
+				"{@atk mw} {@hit 11} to hit, reach 25 ft., one target. {@h}15 ({@damage 3d6 + 5}) slashing damage and if the target is a Large or smaller creature they are {@condition grappled} (escape {@dc 19}). Massacre Girl can have up to four Medium or smaller creatures {@condition grappled} this way at a time. One Large creature counts as two Medium creatures."
+			]
+		},
+		{
+			"name": "Whirlwind Massacre {@recharge 5}",
+			"entries": [
+				"{@actSave dex} {@dc 19}, each creature in a 30-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from Massacre Girl. {@actSaveFail} 70 ({@damage 20d6}) Slashing damage, and the target has the {@condition Prone|XPHB} condition. {@actSaveSuccess} Half damage only."
+			]
+		}
+	],
+	"conditionInflict": [
+		"prone"
+	],
+	"miscTags": [
+		"MW",
+		"RCH",
+		"AOE"
+	],
+	"legendary": [
+		{
+			"name": "Chain Gang",
+			"entries": [
+				"{@actSave str} {@dc 19}, one creature {@condition grappled} by Massacre Girl. {@actSaveFail} The target is thrown at a point on the ground Massacre Girl can see within 40 feet of her. The target and each creature within 5 feet of the point takes 22 ({@damage 4d10}) bludgeoning damage. She then uses Whirling Leap."
+			]
+		},
+		{
+			"name": "Flay",
+			"entries": [
+				"Massacre Girl makes a Bladed Chain attack against each target in a 25-foot {@variantrule Cone [Area of Effect]|XPHB|Cone} in front of her. These attacks do an extra 7 ({@damage 2d6}) slashing damage but do not grapple."
+			]
+		},
+		{
+			"name": "Blood Surge",
+			"entries": [
+				"Each creature {@condition grappled} by Massacre Girl takes 11 ({@damage 2d10}) necrotic damage and she regains {@variantrule Hit Points|XPHB} equal to the total amount of necrotic damage dealt."
+			]
+		}
+	],
+	"bonus": [
+		{
+			"name": "Whirling Leap",
+			"entries": [
+				"Massacre Girl jumps 20 feet in any direction without provoking opportunity attacks. If she has a creature {@condition grappled}, she can instead choose to jump to any point within 20 feet of a {@condition grappled} creature."
+			]
+		}
+	],
+	"senses": [
+		"darkvision 120 ft. (unimpeded by magical darkness)"
+	],
+	"senseTags": [
+		"SD"
+	],
+	"traitTags": [
+		"Devil's Sight"
+	],
+	"damageTags": [
+		"B",
+		"N",
+		"S"
+	],
+	"savingThrowForced": [
+		"dexterity",
+		"strength"
+	]
+}
