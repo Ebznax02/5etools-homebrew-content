@@ -1,0 +1,46 @@
+{
+	"name": "Volatile Infestation",
+	"level": 1,
+	"school": "T",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "feet",
+			"amount": 30
+		}
+	},
+	"duration": [
+		{
+			"type": "timed",
+			"duration": {
+				"type": "hour",
+				"amount": 1
+			}
+		}
+	],
+	"classes": {
+		"fromClassList": []
+	},
+	"entries": [
+		"Choose a Small or larger corpse within range. Magical spores fill the inside of the body for the duration, consuming all natural material. You can end the spell early (no action required) as a Reaction. A creature attempting to interact with the corpse must succeed on a DC 10 Dexterity check or the spell ends. ",
+		"When the spell ends the spores rapidly multiply, exploding from the corpse in a 10-foot Radius. Each creature in the Radius must succeed on a Constitution saving throw. On a failure a creature takes {@damage 3d10} Poison damage and becomes {@condition Poisoned|XPHB} for 1 minute. "
+	],
+	"source": "RavnicaHomebrew",
+	"subschools": [
+		"Golgari Swarm"
+	],
+	"conditionInflict": [
+		"poisoned"
+	],
+	"components": {
+		"v": true,
+		"s": true,
+		"m": "A dead insect"
+	}
+}
