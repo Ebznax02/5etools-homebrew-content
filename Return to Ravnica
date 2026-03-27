@@ -211,7 +211,7 @@
 		},
 		{
 			"uniqueId": "13904dd6-678e-46fe-b10b-ef9461ac5c8a",
-			"name": "Aura of the Wordsoul",
+			"name": "Aria of the Wordsoul",
 			"level": 5,
 			"school": "A",
 			"time": [
@@ -298,10 +298,6 @@
 			"name": "Phantasmal Perspective",
 			"source": "RavnicaHomebrew",
 			"page": 304,
-			"referenceSources": [
-				"DrDe-TDoN",
-				"UtHftLH"
-			],
 			"level": 5,
 			"school": "I",
 			"time": [
