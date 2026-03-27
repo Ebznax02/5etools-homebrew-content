@@ -1,0 +1,65 @@
+{
+	"name": "Darkborn Sun",
+	"source": "RavnicaHomebrew",
+	"level": 6,
+	"school": "E",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "emanation",
+		"distance": {
+			"type": "feet",
+			"amount": 60
+		}
+	},
+	"components": {
+		"v": true
+	},
+	"duration": [
+		{
+			"type": "timed",
+			"duration": {
+				"type": "minute",
+				"amount": 1
+			},
+			"concentration": true
+		}
+	],
+	"entries": [
+		"A black sun is summoned above your head, radiating light in a 60-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from you for the duration.",
+		"When you cast this spell, you can designate creatures to be unaffected by it. While in the {@variantrule Emanation [Area of Effect]|XPHB|Emanation}, any other creature can't regain {@variantrule Hit Points|XPHB}, their {@variantrule Speed|XPHB} is halved, and whenever that creature makes an attack roll or a saving throw before the spell ends, they must subtract {@dice 1d4} from the attack roll or save. ",
+		"Whenever the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} enters a creature's space and whenever a creature enters the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} or ends its turn there, the creature makes a Constitution saving throw, taking {@damage 3d10} Necrotic damage plus {@damage 3d10} Radiant damage on a failed save, or half as much on a success. A creature makes this save only once per turn."
+	],
+	"damageInflict": [
+		"necrotic",
+		"radiant"
+	],
+	"conditionInflict": [
+		"prone"
+	],
+	"savingThrow": [
+		"constitution"
+	],
+	"miscTags": [
+		"HL"
+	],
+	"areaTags": [
+		"S"
+	],
+	"classes": {
+		"fromClassList": []
+	},
+	"subschools": [
+		"Orzhov"
+	],
+	"backgrounds": [
+		{
+			"name": "Orzhov Representative",
+			"source": "GGR"
+		}
+	]
+}
