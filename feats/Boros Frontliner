@@ -1,1 +1,40 @@
-
+{
+	"name": "Boros Frontliner",
+	"source": "EFA",
+	"category": "G",
+	"prerequisite": [
+		{
+			"level": 4,
+			"otherSummary": {
+				"entry": "Renown 10+ with the {@book Boros Legion|GGR|2|Rank and Renown}",
+				"entrySummary": "Dragonmarked House Renown 3+"
+			}
+		}
+	],
+	"ability": [
+		{
+			"choose": {
+				"from": [
+					"str",
+					"dex",
+					"con"
+				]
+			}
+		}
+	],
+	"entries": [
+		"You gain the following benefits.",
+		{
+			"type": "entries",
+			"name": "",
+			"entries": [
+				""
+			]
+		},
+		{
+			"type": "entries",
+			"name": "",
+			"entries": [
+				""
+			]
+		}
