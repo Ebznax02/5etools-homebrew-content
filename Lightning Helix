@@ -1,0 +1,62 @@
+{
+	"name": "Lightning Helix",
+	"level": 4,
+	"school": "V",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "self"
+		}
+	},
+	"duration": [
+		{
+			"type": "instant"
+		}
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Wizard",
+				"source": "XPHB"
+			},
+			{
+				"name": "Cleric",
+				"source": "XPHB"
+			},
+			{
+				"name": "Sorcerer",
+				"source": "XPHB"
+			}
+		]
+	},
+	"entries": [
+		"Two twin bolts of intertwining magic strike out in a 100-foot-long, 5-foot-wide {@variantrule Line [Area of Effect]|XPHB|Line} from you in a direction you choose. Each creature in the {@variantrule Line [Area of Effect]|XPHB|Line} makes a Dexterity saving throw, taking {@damage 4d6} Lightning damage and {@damage 4d6} Radiant damage on a failed save or half as much damage on a successful one. Choose one creature within 30 feet of the {@variantrule Line [Area of Effect]|XPHB|Line}. That creature regains hit points equal to the total damage dealt by the spell."
+	],
+	"source": "RavnicaHomebrew",
+	"components": {
+		"v": true,
+		"s": true
+	},
+	"damageInflict": [
+		"lightning",
+		"radiant"
+	],
+	"savingThrow": [
+		"dexterity"
+	],
+	"areaTags": [
+		"L"
+	],
+	"miscTags": [
+		"HL"
+	],
+	"subschools": [
+		"Boros Legion"
+	]
+}
