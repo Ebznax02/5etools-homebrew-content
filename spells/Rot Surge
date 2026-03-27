@@ -1,0 +1,47 @@
+{
+	"name": "Rot Surge",
+	"source": "RavnicaHomebrew",
+	"level": 4,
+	"school": "C",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "feet",
+			"amount": 120
+		}
+	},
+	"components": {
+		"v": true,
+		"s": true
+	},
+	"duration": [
+		{
+			"type": "instant"
+		}
+	],
+	"entries": [
+		"You cause a burst of decaying matter to erupt at a point within range. Each creature in a 20-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} centered on that point makes an Constitution saving throw or become {@condition Poisoned|XPHB} for 1 minute.",
+		"A {@condition Poisoned|XPHB} creature takes {@damage 4d10} necrotic damage and gains 1 point of {@condition Exhaustion|XPHB} at the start of each of its turns. The target makes an Constitution saving throw at the end of each of its turns, ending the {@condition Poisoned|XPHB} and removing all points of {@condition Exhaustion|XPHB} gained from this spell on itself on a success ."
+	],
+	"damageInflict": [
+		"necrotic"
+	],
+	"savingThrow": [
+		"constitution"
+	],
+	"areaTags": [
+		"S"
+	],
+	"subschools": [
+		"Golgari"
+	],
+	"conditionInflict": [
+		"poisoned"
+	]
+}
