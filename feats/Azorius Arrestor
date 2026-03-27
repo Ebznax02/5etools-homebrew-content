@@ -1,0 +1,45 @@
+{
+  "name": "Azorius Arrestor",
+  "source": "RavnicaHomebrew",
+  "category": "G",
+  "prerequisite": [
+    {
+      "level": 4,
+      "otherSummary": {
+        "entry": "Renown 10+ with the {@book Boros Legion|GGR|2|Boros Legion}",
+        "entrySummary": "Boros Legion Renown 10+"
+      }
+    }
+  ],
+  "ability": [
+    {
+      "choose": {
+        "from": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ]
+      }
+    }
+  ],
+  "entries": [
+    "You gain the following benefits.",
+    {
+      "type": "entries",
+      "name": "Lead from the Front",
+      "entries": [
+        "You unleash a rallying cry as a {@variantrule Bonus Action|XPHB}. When you do so, choose up to 3 allies within 15 feet of yourself who can hear you. The chosen creatures each gain {@variantrule Temporary Hit Points|XPHB} equal to the modifier of the ability you increased with this feat. You can use this feature a number of times equal to your {@variantrule Proficiency|XPHB|Proficiency Bonus} and regain all uses when you finish a {@variantrule Long Rest|XPHB}."
+      ]
+    },
+    {
+      "type": "entries",
+      "name": "",
+      "entries": [
+        ""
+      ]
+    }
+  ]
+}
