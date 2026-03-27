@@ -1,0 +1,41 @@
+{
+	"name": "Aria of the Wordsoul",
+	"level": 5,
+	"school": "A",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "self"
+		}
+	},
+	"duration": [
+		{
+			"type": "timed",
+			"duration": {
+				"type": "minute",
+				"amount": 1
+			},
+			"concentration": true
+		}
+	],
+	"classes": {
+		"fromClassList": []
+	},
+	"entries": [
+		"An aura radiates from you in a 30-foot  {@variantrule Emanation [Area of Effect]|XPHB|Emanation} for the duration. When you create the aura and at the start of each of your turns while it persists, you can grant {@dice 2d6} {@variantrule Temporary Hit Points|XPHB} to one creature within it. As long as a creature has these {@variantrule Temporary Hit Points|XPHB} it adds {@dice 1d4} to attack rolls and saving throws it makes. The {@variantrule Temporary Hit Points|XPHB} granted by this spell disappear when the spell ends."
+	],
+	"source": "RavnicaHomebrew",
+	"subschools": [
+		"Selesnya Conclave"
+	],
+	"components": {
+		"v": true,
+		"s": true
+	}
+}
