@@ -1,0 +1,49 @@
+{
+	"name": "Mass Manipulation",
+	"level": 7,
+	"school": "E",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "feet",
+			"amount": 500
+		}
+	},
+	"duration": [
+		{
+			"type": "timed",
+			"duration": {
+				"type": "minute",
+				"amount": 10,
+				"upTo": true
+			},
+			"concentration": true
+		}
+	],
+	"classes": {
+		"fromClassList": []
+	},
+	"entries": [
+		"Twelve or fewer Humanoids you can see within range must succeed on a Wisdom saving throw or have the {@condition Charmed|XPHB} condition for the duration. Each target has Advantage on the save if you or your allies are fighting it. ",
+		"You have a telepathic link with the {@condition Charmed|XPHB} targets while you are on the same plane of existence as them. On your turn, you can use this link to issue commands to any number of targets (no action required), such as \"Attack that creature,\" \"Move over there,\" or \"Fetch that object.\" The targets do their best to obey on their turns. If an order is completed and a target doesn't receive further direction from you, they act and move as they like, focusing on protecting themselves.",
+		"You can command a target to take a Reaction but must take your own Reaction to do so. If a target becomes {@condition incapacitated}, the effect of the spell ends. "
+	],
+	"source": "RavnicaHomebrew",
+	"subschools": [
+		"House Dimir"
+	],
+	"conditionInflict": [
+		"incapacitated"
+	],
+	"components": {
+		"v": true,
+		"s": true,
+		"m": "A broken pocketwatch"
+	}
+}
