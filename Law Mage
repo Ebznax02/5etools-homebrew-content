@@ -45,10 +45,6 @@
         "level": 3,
         "entries": [
             "please insert a description of the subclass here thank you future me"
-          {
-            "type": "refSubclassFeature",
-					  "subclassFeature":"Ferromantic Spells|Wizard||Law Mage|LawMageWizard|3"
-          },
 				{
 					"type": "refSubclassFeature",
 					"subclassFeature": "Level 3  Steel-Forged Sorcery|Wizard|Law Mage|LawMageWizard|3"
@@ -56,48 +52,7 @@
         ]
     }
 ]
-{
-			"name": "Ferromantic Spells",
-			"source": "LawMageWizard",
-			"className": "Wizard",
-			"classSource": "PHB",
-			"subclassShortName": "Law Mage",
-			"subclassSource": "LawMageWizard",
-			"level": 3,
-			"entries": [
-				"You always have certain spells prepared after you reach particular levels in this class, as shown in the Ferromantic Spells table. These spells count as Wizard spells for you, but they don't count against the number of Wizard spells you prepare.",
-				{
-					"type": "table",
-					"caption": "Ferromantic Spells",
-					"colLabels": [
-						"Wizard Level",
-						"Spells"
-					],
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
-					"rows": [
-						[
-							"3rd",
-							"{@spell Shield}, {@spell False Life}, {@spell Cloud of Daggers}, {@spell Heat Metal}"
-						],
-						[
-							"5th",
-							"{@spell Conjure Barrage}, {@spell Leomund's Tiny Hut}"
-						],
-						[
-							"7th",
-							"{@spell Fabricate}, {@spell Summon Construct}"
-						],
-						[
-							"9th",
-							"{@spell Conjure Volley}, {@spell Wall of Stone}"
-						]
-					]
-				}
-			]
-		},
+
 		{
 			"name": "Steel-Forged Sorcery",
 			"source": "LawMageWizard",
