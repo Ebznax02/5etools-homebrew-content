@@ -1,0 +1,234 @@
+{
+	"name": "Vannifar, Evolved Enigma",
+	"size": [
+		"M"
+	],
+	"type": "humanoid",
+	"source": "RavnicaHomebrew",
+	"alignment": [
+		"N"
+	],
+	"ac": [
+		{
+			"special": "19 (natural armor)"
+		}
+	],
+	"hp": {
+		"formula": "21d8 + 84",
+		"average": 178
+	},
+	"speed": {
+		"walk": 30,
+		"swim": 30
+	},
+	"str": 11,
+	"dex": 14,
+	"con": 18,
+	"int": 26,
+	"wis": 22,
+	"cha": 19,
+	"passive": 24,
+	"cr": "26",
+	"senses": [
+		"darkvision 120 ft."
+	],
+	"senseTags": [
+		"SD"
+	],
+	"languages": [
+		"Common",
+		"Elvish",
+		"Primordial",
+		"Merfolk"
+	],
+	"languageTags": [
+		"C",
+		"E",
+		"P"
+	],
+	"save": {
+		"con": "+12",
+		"int": "+16",
+		"wis": "+14",
+		"cha": "+12"
+	},
+	"skill": {
+		"animal handling": "+14",
+		"arcana": "+16",
+		"nature": "+16",
+		"medicine": "+14",
+		"perception": "+14"
+	},
+	"resist": [
+		"acid",
+		"cold",
+		"fire"
+	],
+	"conditionImmune": [
+		"blinded",
+		"deafened",
+		"grappled",
+		"prone",
+		"restrained",
+		"unconscious"
+	],
+	"trait": [
+		{
+			"name": "Amorphous",
+			"entries": [
+				"Vannifar can move through a space as narrow as 1 inch wide without squeezing."
+			]
+		},
+		{
+			"name": "Amphibious",
+			"entries": [
+				"Vannifar can breathe air and water."
+			]
+		},
+		{
+			"name": "Prime Speaker's Authority",
+			"entries": [
+				"While holding the Prime Speaker's Trident, Vannifar's voice can be heard clearly from up to 500 feet away no matter what volume she speaks at. She can choose to disable and enable this trait as a Bonus Action."
+			]
+		},
+		{
+			"name": "Bolstering Presence",
+			"entries": [
+				"Vannifar emits life bolstering energy within 30 feet of herself. An ally that starts its turn there gains 11 ({@damage 2d10}) {@variantrule Hit Points|XPHB}."
+			]
+		},
+		{
+			"name": "Toxic Skin",
+			"entries": [
+				"Whenever a creature hits Vannifar with a melee attack, that creature takes 11 ({@damage 2d6}) poison damage."
+			]
+		}
+	],
+	"traitTags": [
+		"Amorphous",
+		"Amphibious",
+		"Regeneration"
+	],
+	"shortName": "Vannifar",
+	"isNamedCreature": true,
+	"spellcasting": [
+		{
+			"name": "Spellcasting",
+			"headerEntries": [
+				"Vannifar casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 24}):"
+			],
+			"displayAs": "action",
+			"will": [
+				"{@spell Alter Self|XPHB}",
+				"{@spell Command|XPHB}",
+				"{@spell Control Water|XPHB}",
+				"{@spell Dispel Magic|XPHB}",
+				"{@spell Druidcraft|XPHB}",
+				"{@spell Enlarge/Reduce|XPHB}",
+				"{@spell Evard's Black Tentacles|XPHB}",
+				"{@spell Polymorph|XPHB}",
+				"{@spell Prestidigitation|XPHB}"
+			],
+			"daily": {
+				"1": [
+					"{@spell Befuddlement|XPHB}",
+					"{@spell Chain Lightning|XPHB}",
+					"{@spell Dominate Monster|XPHB}",
+					"{@spell Regenerate|XPHB}",
+					"{@spell Teleport|XPHB}",
+					"{@spell Wall of Force|XPHB}"
+				]
+			},
+			"ability": "int",
+			"type": "spellcasting"
+		}
+	],
+	"spellcastingTags": [
+		"O"
+	],
+	"action": [
+		{
+			"name": "Multi-Attack",
+			"entries": [
+				"Vannifar makes three attacks. She can substitute one of these attacks with a spell with a casting time of one action."
+			]
+		},
+		{
+			"name": "Prime Speaker's Trident",
+			"entries": [
+				"{@atk mw,rw} {@hit 16} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}11 ({@damage 1d6+8}) piercing damage and each creature of Vannifar's choice within 10 feet of the target takes 14 ({@damage 4d6}) thunder damage. On a hit or miss the Trident always returns to Vannifar's hand after an attack."
+			]
+		},
+		{
+			"name": "Paralyzing Tendril",
+			"entries": [
+				"{@atk mw} {@hit 12} to hit, reach 15 ft., one target. {@h} The target is {@condition grappled} and {@condition restrained} (escape {@dc 20}). At the end of a {@condition grappled} creature's turn it must succeed on a {@dc 20} Constitution saving throw or be {@condition paralyzed} until the end of its next turn. Vannifar can have two targets {@condition grappled} this way at a time."
+			]
+		},
+		{
+			"name": "Biomantic Mastery {@recharge 5}",
+			"entries": [
+				"Vannifar enhances the biology of herself and up to 2 other creatures of her choice that she can see within 60 feet of herself. Until the end of Vannifar's next turn, each target has advantage on all {@variantrule D20 Tests|XPHB}, all attack rolls against them have disadvantage, "
+			]
+		}
+	],
+	"miscTags": [
+		"RW",
+		"MW",
+		"MLW",
+		"THW",
+		"RCH"
+	],
+	"conditionInflict": [
+		"grappled",
+		"prone",
+		"restrained"
+	],
+	"reaction": [
+		{
+			"name": "Voidslime (3/Day)",
+			"entries": [
+				"Vannifar casts {@spell Counterspell|XPHB} in response to the spell's trigger, using the same spellcasting ability as Spellcasting. If the target fails its saving throw they become enveloped in a short lasting ooze. Until the end of the target's next turn they are {@condition restrained} and cannot speak."
+			]
+		}
+	],
+	"legendary": [
+		{
+			"name": "Deluge",
+			"entries": [
+				"{@actSave str} {@dc 24}, each creature in a 60-foot {@variantrule Cube [Area of Effect]|XPHB|Cube} originating from a point on the ground Vannifar can see within 150 feet. {@actSaveFail} 22 ({@damage 4d10}) bludgeoning damage and the target is knocked {@condition prone} and pushed along the ground up to 60 feet from the origin. {@actSaveSuccess} Half damage only."
+			]
+		},
+		{
+			"name": "Strike",
+			"entries": [
+				"Vannifar makes a melee attack."
+			]
+		}
+	],
+	"damageTags": [
+		"B",
+		"I",
+		"P",
+		"T"
+	],
+	"damageTagsSpell": [
+		"B",
+		"L",
+		"O",
+		"P",
+		"S",
+		"Y"
+	],
+	"savingThrowForced": [
+		"constitution",
+		"strength"
+	],
+	"savingThrowForcedSpell": [
+		"constitution",
+		"dexterity",
+		"intelligence",
+		"strength",
+		"wisdom"
+	]
+}
