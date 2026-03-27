@@ -1,0 +1,64 @@
+{
+	"name": "Crushing Obligation",
+	"source": "RavnicaHomebrew",
+	"level": 5,
+	"school": "E",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "feet",
+			"amount": 120
+		}
+	},
+	"components": {
+		"v": true,
+		"s": true
+	},
+	"duration": [
+		{
+			"type": "timed",
+			"duration": {
+				"type": "minute",
+				"amount": 1
+			},
+			"concentration": true
+		}
+	],
+	"entries": [
+		"You cause clinging shadows to erupt at a point within range, clinging to the minds of the guilty. Each creature in a 20-foot-radius, 40-foot-high {@variantrule Cylinder [Area of Effect]|XPHB|Cylinder} centered on that point makes an Wisdom saving throw. On a failed save a creature takes {@damage 5d6} Psychic damage on a failed save and becomes {@condition Charmed|XPHB} for the duration. On a successful save, a creature takes half as much damage only.",
+		"While {@condition Charmed|XPHB} this way, a creature is {@condition Prone|XPHB} and {@condition Paralyzed|XPHB}. The target makes an Wisdom saving throw at the end of each of its turns, ending the effect on itself on a success."
+	],
+	"damageInflict": [
+		"psychic"
+	],
+	"savingThrow": [
+		"intelligence",
+		"constitution"
+	],
+	"areaTags": [
+		"S"
+	],
+	"classes": {
+		"fromClassList": []
+	},
+	"subschools": [
+		"Orzhov"
+	],
+	"conditionInflict": [
+		"charmed",
+		"paralyzed",
+		"prone"
+	],
+	"backgrounds": [
+		{
+			"name": "Orzhov Representative",
+			"source": "XPHB"
+		}
+	]
+}
