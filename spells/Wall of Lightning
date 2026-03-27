@@ -1,0 +1,72 @@
+{
+	"name": "Wall of Lightning",
+	"source": "RavnicaHomebrew",
+	"level": 4,
+	"school": "V",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "feet",
+			"amount": 120
+		}
+	},
+	"components": {
+		"v": true,
+		"s": true,
+		"m": "a metal wire"
+	},
+	"duration": [
+		{
+			"type": "timed",
+			"duration": {
+				"type": "minute",
+				"amount": 1
+			},
+			"concentration": true
+		}
+	],
+	"entries": [
+		"A wall of crackling lightning springs into existence at a point you choose within range. The wall appears in any orientation you choose, as a horizontal or vertical barrier or at an angle. It can be free floating or resting on a solid surface. You can make the wall up to 60 feet long and 20 feet high. The wall is always 1 inch thick. The area the wall occupies is lightly obscured.",
+		"When the wall appears, each creature in its area makes a Dexterity saving throw. On a failure a creature takes {@damage 4d6} Lightning damage and becomes {@condition Stunned|XPHB} until the end of your next turn. On a successful save, the creature takes half as much damage only.",
+		"One side of the wall, selected by you when you cast this spell, deals {@damage 4d6} Lightning damage to each creature that ends its turn within 10 feet of that side or inside the wall. A creature takes the same damage when it enters the wall for the first time on a turn or ends its turn there. The other side of the wall deals no damage."
+	],
+	"entriesHigherLevel": [
+		{
+			"type": "entries",
+			"name": "Using a Higher-Level Spell Slot",
+			"entries": [
+				"The damage increases by {@scaledamage 5d8|4-9|1d6} for each spell slot level above 4."
+			]
+		}
+	],
+	"damageInflict": [
+		"fire"
+	],
+	"savingThrow": [
+		"dexterity"
+	],
+	"areaTags": [
+		"W"
+	],
+	"classes": {
+		"fromClassList": []
+	},
+	"backgrounds": [
+		{
+			"name": "Izzet Engineer",
+			"source": "GGR"
+		}
+	],
+	"subschools": [
+		"Izzet"
+	],
+	"conditionInflict": [
+		"stunned"
+	]
+}
