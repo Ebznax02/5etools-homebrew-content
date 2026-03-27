@@ -1,4 +1,18 @@
 {
+	"_meta": {
+		"sources": [
+			{
+				"json": "RavnicaHomebrew",
+				"abbreviation": "RTR",
+				"full": "Return to Ravnica",
+				"version": "1.0.0"
+			}
+		],
+		"dateAdded": 1602746393,
+		"dateLastModified": 1772790868,		
+	},
+	"feat": [
+{
 	"name": "Boros Frontliner",
 	"source": "RavnicaHomebrew",
 	"category": "G",
@@ -45,5 +59,8 @@
 				""
 			]
     }
-  ]
+]
+  
 		}
+]
+}
