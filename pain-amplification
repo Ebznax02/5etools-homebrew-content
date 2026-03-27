@@ -1,0 +1,42 @@
+{
+	"name": "Pain Amplification",
+	"level": 2,
+	"school": "E",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "touch"
+		}
+	},
+	"duration": [
+		{
+			"type": "timed",
+			"duration": {
+				"type": "minute",
+				"amount": 1
+			},
+			"concentration": true
+		}
+	],
+	"classes": {
+		"fromClassList": []
+	},
+	"entries": [
+		"You touch a creature, which must succeed on a Wisdom saving throw or become cursed for the duration. Until the spell ends, whenever the target takes damage from any source it takes an additional {@damage 2d8} psychic damage. "
+	],
+	"source": "RavnicaHomebrew",
+	"subschools": [
+		"Cult of Rakdos"
+	],
+	"components": {
+		"v": true,
+		"s": true,
+		"m": "A handful of needles"
+	}
+}
