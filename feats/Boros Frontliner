@@ -1,13 +1,13 @@
 {
 	"name": "Boros Frontliner",
-	"source": "EFA",
+	"source": "RavnicaHomebrew",
 	"category": "G",
 	"prerequisite": [
 		{
 			"level": 4,
 			"otherSummary": {
-				"entry": "Renown 10+ with the {@book Boros Legion|GGR|2|Rank and Renown}",
-				"entrySummary": "Dragonmarked House Renown 3+"
+				"entry": "Renown 10+ with the {@book Boros Legion|GGR|2|Boros Legion}",
+				"entrySummary": "Boros Legion Renown 10+"
 			}
 		}
 	],
@@ -28,7 +28,14 @@
 			"type": "entries",
 			"name": "",
 			"entries": [
-				""
+				"",
+				{
+							"type": "entries",
+							"name": "Lead from the Front",
+							"entries": [
+								"you unleash a rallying cry as a {@variantrule Bonus Action|XPHB}."
+							]
+						}
 			]
 		},
 		{
@@ -37,4 +44,6 @@
 			"entries": [
 				""
 			]
+    }
+  ]
 		}
