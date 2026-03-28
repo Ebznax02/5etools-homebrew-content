@@ -1,0 +1,244 @@
+{
+	"name": "Aurelia",
+	"isNamedCreature": true,
+	"source": "RavnicaHomebrew",
+	"size": [
+		"M"
+	],
+	"type": {
+		"type": "celestial",
+		"tags": [
+			"angel"
+		]
+	},
+	"alignment": [
+		"L",
+		"G"
+	],
+	"ac": [
+		{
+			"ac": 22,
+			"from": [
+				"natural armor"
+			]
+		}
+	],
+	"hp": {
+		"average": 325,
+		"formula": "26d8 + 208"
+	},
+	"speed": {
+		"walk": 50,
+		"fly": 150
+	},
+	"str": 26,
+	"dex": 24,
+	"con": 27,
+	"int": 17,
+	"wis": 25,
+	"cha": 30,
+	"save": {
+		"dex": "+15",
+		"con": "+16",
+		"cha": "+18"
+	},
+	"skill": {
+		"insight": "+15",
+		"perception": "+15"
+	},
+	"senses": [
+		"truesight 120 ft."
+	],
+	"passive": 25,
+	"resist": [
+		"lightning",
+		"necrotic",
+		"radiant"
+	],
+	"immune": [
+		"fire",
+		"poison"
+	],
+	"conditionImmune": [
+		"charmed",
+		"exhaustion",
+		"frightened",
+		"paralyzed",
+		"poisoned"
+	],
+	"languages": [
+		"all"
+	],
+	"cr": "25",
+	"trait": [
+		{
+			"name": "Legendary Resistance (3/Day)",
+			"entries": [
+				"If Aurelia fails a saving throw, she can choose to succeed instead."
+			]
+		},
+		{
+			"name": "Magic Resistance",
+			"entries": [
+				"Aurelia has advantage on saving throws against spells and other magical effects."
+			]
+		},
+		{
+			"name": "Reactive",
+			"entries": [
+				"Aurelia can take one {@variantrule Reaction|XPHB} on every turn in combat."
+			]
+		},
+		{
+			"name": "Blistering Speed.",
+			"entries": [
+				"Other creature's cannot use a {@variantrule Reaction|XPHB} on Aurelia's turn unless their {@variantrule Initiative|XPHB} bonus is 5 or greater."
+			]
+		}
+	],
+	"action": [
+		{
+			"name": "Multiattack",
+			"entries": [
+				"Aurelia makes four attacks, two with Fire-Forged Blade and two with Righteous Radiance. "
+			]
+		},
+		{
+			"name": "Fire-Forged Blade",
+			"entries": [
+				"{@atk mw} {@hit 16} to hit, reach 5 ft., one target. {@h}12 ({@damage 1d8 + 8}) Slashing damage 32 ({@damage 7d8}) Fire damage."
+			]
+		},
+		{
+			"name": "Righteous Radiance",
+			"entries": [
+				"{@atk mw} {@hit 16} to hit, reach 5 ft., one target. {@h}12 ({@damage 1d8 + 8}) Slashing damage plus 32 ({@damage 7d8}) Radiant damage."
+			]
+		}
+	],
+	"reaction": [
+		{
+			"name": "Parry",
+			"entries": [
+				"Aurelia adds 7 to her AC against one melee attack that would hit her. To do so, Aurelia must see the attacker and be wielding a melee weapon."
+			]
+		},
+		{
+			"name": "Unyielding",
+			"entries": [
+				"When Aurelia is subjected to an effect that would move her, knock her {@condition prone}, or both, she can use her reaction to be neither moved nor knocked {@condition prone}."
+			]
+		}
+	],
+	"legendary": [
+		{
+			"name": "Command Allies",
+			"entries": [
+				"Aurelia chooses up to three creatures she can see within 30 feet of her. If a chosen creature can see or hear Aurelia, it can immediately use its reaction to make one weapon attack, with advantage on the attack roll."
+			]
+		},
+		{
+			"name": "Attack",
+			"entries": [
+				"Aurelia makes a melee weapon attack."
+			]
+		},
+		{
+			"name": "Frighten Foes",
+			"entries": [
+				"Aurelia targets up to five creatures she can see within 30 feet of her. Each target must succeed on a {@dc 26} Wisdom saving throw or be {@condition frightened} of her until the end of her next turn. Any target within 5 feet of Aurelia has disadvantage on the saving throw. Aurelia can't use this action again until the start of her next turn."
+			]
+		}
+	],
+	"attachedItems": [
+		"longsword|phb",
+		"longsword|xphb"
+	],
+	"traitTags": [
+		"Legendary Resistances",
+		"Magic Resistance"
+	],
+	"senseTags": [
+		"U"
+	],
+	"actionTags": [
+		"Multiattack",
+		"Parry"
+	],
+	"languageTags": [
+		"XX"
+	],
+	"miscTags": [
+		"MW"
+	],
+	"conditionInflict": [
+		"blinded",
+		"frightened"
+	],
+	"hasFluff": true,
+	"hasFluffImages": true,
+	"token": {
+		"name": "Aurelia",
+		"source": "GGR"
+	},
+	"fluff": {
+		"name": "Aurelia",
+		"source": "GGR",
+		"entries": [
+			{
+				"type": "entries",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"The angel Aurelia leads the Boros Legion. During the years of her leadership, she has shown a strong appreciation for the ordinary citizens who are often caught in the middle of interguild violence.",
+									"True justice, Aurelia argues, isn't merely the enforcement of the letter of existing laws (let the Azorius fret over that), but the establishment of equitable and compassionate relationships among all of Ravnica's people. That means protecting the weak from the depredations of the strong, sheltering the innocents who are threatened by war, and ensuring that enforcement of the law doesn't become oppressive. Aurelia actively supports efforts to establish a lasting peace among the guilds in the absence of the Guildpact.",
+									"Aurelia prefers to lead the Boros Legion from the front. She brings swift and unrelenting punishment to the wicked, and her temper is legendary.",
+									{
+										"name": "Immortal Nature",
+										"type": "entries",
+										"entries": [
+											"Aurelia doesn't require food, drink, or sleep."
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		],
+		"images": [
+			{
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "bestiary/GGR/Aurelia.webp"
+				},
+				"credit": "Chris Rahn",
+				"width": 933,
+				"height": 700
+			}
+		]
+	},
+	"bonus": [
+		{
+			"name": "Cleansing Wave {@recharge 5}",
+			"entries": [
+				"{@actSave dex} {@dc 26}, each creature in a 60-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail} 14 ({@damage 4d6}) Fire damage and 14 ({@damage 4d6}) Radiant damage and the target is {@condition Blinded|XPHB} until the end of their next turn. {@actSaveSuccess} Half damage only."
+			]
+		}
+	],
+	"damageTags": [
+		"F",
+		"R",
+		"S"
+	],
+	"savingThrowForced": [
+		"dexterity",
+		"wisdom"
+	]
+}
