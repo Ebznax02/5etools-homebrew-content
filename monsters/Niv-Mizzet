@@ -1,0 +1,282 @@
+{
+	"name": "Niv-Mizzet",
+	"group": [
+		"Chromatic Dragon"
+	],
+	"source": "RavnicaHomebrew",
+	"size": [
+		"G"
+	],
+	"type": "dragon",
+	"alignment": [
+		"C",
+		"N"
+	],
+	"ac": [
+		{
+			"ac": 22,
+			"from": [
+				"natural armor"
+			]
+		}
+	],
+	"hp": {
+		"formula": "19d20 + 171",
+		"average": 370
+	},
+	"speed": {
+		"walk": 60,
+		"fly": 120
+	},
+	"str": 29,
+	"dex": 14,
+	"con": 29,
+	"int": 30,
+	"wis": 17,
+	"cha": 26,
+	"save": {
+		"con": "+18",
+		"wis": "+13",
+		"cha": "+16",
+		"int": "+18"
+	},
+	"skill": {
+		"intimidation": "+16",
+		"perception": "+11",
+		"arcana": "+18",
+		"insight": "+11",
+		"history": "+18"
+	},
+	"senses": [
+		"truesight 120 ft."
+	],
+	"passive": 21,
+	"immune": [
+		"fire",
+		"lightning"
+	],
+	"conditionImmune": [
+		"charmed",
+		"frightened"
+	],
+	"languages": [
+		"Common",
+		"Draconic"
+	],
+	"cr": "27",
+	"trait": [
+		{
+			"name": "The Dracogenius (Recharges after a Short or Long Rest)",
+			"entries": [
+				"If Niv-Mizzet would be reduced to 0 hit points, his current hit point total instead resets to 370 hit points, he recharges his Breath Weapon, he regains all uses of Spellcasting, and he regains any expended uses of Legendary Resistance. Additionally, he can now use the options in the \"Mythic Actions\" section for 1 hour. "
+			]
+		},
+		{
+			"name": "Legendary Resistance (4/Day)",
+			"entries": [
+				"If Niv-Mizzet fails a saving throw, he can choose to succeed instead."
+			]
+		},
+		{
+			"name": "Locus of the Firemind.",
+			"entries": [
+				"Niv-Mizzet can maintain {@status Concentration|XPHB} on two different spells at the same time. In addition, he has advantage on saving throws to maintain {@status Concentration|XPHB} on spells."
+			]
+		},
+		{
+			"name": "Magic Resistance",
+			"entries": [
+				"Niv-Mizzet has advantage on saving throws against spells and other magical effects."
+			]
+		},
+		{
+			"name": "Master Chemister.",
+			"entries": [
+				"When Niv-Mizzet casts a spell that deals damage, he can change the spell's damage to cold, fire, force, lightning, or thunder."
+			]
+		}
+	],
+	"mythicHeader": [
+		"If Niv-Mizzet's \"The Dracogenius\" trait has activated in the last hour, he can use the options below as legendary actions."
+	],
+	"dragonCastingColor": "red",
+	"dragonAge": "greatwyrm",
+	"traitTags": [
+		"Legendary Resistances",
+		"Magic Resistance",
+		"Unusual Nature"
+	],
+	"senseTags": [
+		"U"
+	],
+	"actionTags": [
+		"Breath Weapon",
+		"Multiattack"
+	],
+	"languageTags": [
+		"C",
+		"DR"
+	],
+	"miscTags": [
+		"MW",
+		"RCH"
+	],
+	"hasFluff": true,
+	"hasFluffImages": true,
+	"token": {
+		"name": "Red Greatwyrm",
+		"source": "FTD"
+	},
+	"fluff": {
+		"name": "Red Greatwyrm",
+		"source": "FTD",
+		"images": [
+			{
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "bestiary/FTD/Red Greatwyrm.webp"
+				},
+				"credit": "Svetlin Velinov",
+				"width": 1700,
+				"height": 1137
+			}
+		],
+		"entries": [
+			"The most ancient chromatic dragons, who have survived over twelve hundred years of mortal life and acquired vast hoards worth millions of gold pieces, can achieve a form of apotheosis, reaching a level of power approaching that of Tiamat's mighty aspect. The competitive avarice of dragonkind and the interference of adventurers prevent most dragons from attaining this level of power. But a chromatic dragon who can outwit all rivals and overcome all potential thieves can rise to become one of the mightiest of dragons.",
+			"Often a chromatic greatwyrm's ascension involves fusing the power of a single dragon's echoes across different worlds of the Material Plane. The black greatwyrm Chronepsis, for example, is said to have stalked multiple worlds and devoured many of his echoes before withdrawing to a planar lair in the Outlands. The red greatwyrm Ashardalon worked with a balor to ritually drain the power of his echoes, then infused their power into himself by implanting the balor where his heart had been.",
+			"In both size and power, chromatic greatwyrms exceed even ancient dragons. The energy of their breath weapons courses over their bodies and glows under their scales, and elemental forces rage around them when they exert their wrath. They no longer need to eat or drink, as their vast hoards magically sustain them. And their power can raze a city to the ground, destroying buildings and defenders alike."
+		]
+	},
+	"isNamedCreature": true,
+	"resist": [
+		"cold",
+		"psychic",
+		"thunder"
+	],
+	"spellcasting": [
+		{
+			"name": "Spellcasting",
+			"headerEntries": [
+				"Niv-Mizzet casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 26}):"
+			],
+			"displayAs": "action",
+			"will": [
+				"{@spell Detect Magic|XPHB}",
+				"{@spell Dispel Magic|XPHB}",
+				"{@spell Fireball|XPHB}",
+				"{@spell Lightning Bolt|XPHB}"
+			],
+			"daily": {
+				"3e": [
+					"{@spell Chain Lightning|XPHB}",
+					"{@spell Dimension Door|XPHB}",
+					"{@spell Disintegrate|XPHB}",
+					"{@spell Wall of Force|XPHB}"
+				],
+				"1e": [
+					"{@spell Maze|XPHB}",
+					"{@spell Power Word Stun|XPHB}",
+					"{@spell Reverse Gravity|XPHB}",
+					"{@spell Time Stop|XPHB}"
+				]
+			},
+			"ability": "int",
+			"type": "spellcasting"
+		}
+	],
+	"spellcastingTags": [
+		"O"
+	],
+	"action": [
+		{
+			"name": "Multiattack.",
+			"entries": [
+				"Niv-Mizzet makes one Bite attack and two Claw attacks."
+			]
+		},
+		{
+			"name": "Bite",
+			"entries": [
+				"{@atk mw} {@hit 17} to hit, reach 5 ft., one target. {@h}20 ({@damage 2d10 + 9}) piercing damage, plus 13 ({@damage 2d12}) fire damage."
+			]
+		},
+		{
+			"name": "Claw",
+			"entries": [
+				"{@atk mw} {@hit 17} to hit, reach 10 ft., one target. {@h}18 ({@damage 2d8 + 9}) slashing damage."
+			]
+		},
+		{
+			"name": "Breath Weapon {@recharge 5}",
+			"entries": [
+				"{@actSave dex} {@dc 24}, each creature in a 90-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail} 46 ({@damage 13d6}) Fire damage and 46 ({@damage 13d6}) Lightning damage. {@actSaveSuccess} Half damage.\""
+			]
+		},
+		{
+			"name": "Tail",
+			"entries": [
+				"{@atk mw} {@hit 17} to hit, reach 20 ft., one target. {@h}18 ({@damage 2d8 + 9}) bludgeoning damage. If the target is a creature, it must make the following saving throw. {@actSave str} {@dc 25}. {@actSaveFail} The target is knocked {@condition prone}."
+			]
+		}
+	],
+	"conditionInflict": [
+		"prone"
+	],
+	"reaction": [
+		{
+			"name": "Protective Magic (3/Day)",
+			"entries": [
+				"Niv-Mizzet casts {@spell Counterspell|XPHB} or {@spell Shield|XPHB} in response to the spell's trigger, using the same spellcasting ability as Spellcasting."
+			]
+		}
+	],
+	"legendary": [
+		{
+			"name": "Attack",
+			"entries": [
+				"Niv-Mizzet makes one attack."
+			]
+		},
+		{
+			"name": "Spellcasting",
+			"entries": [
+				"Niv-Mizzet uses Spellcasting."
+			]
+		}
+	],
+	"mythic": [
+		{
+			"name": "Arcana Barrage.",
+			"entries": [
+				"Niv-Mizzet uses Spellcasting to cast an At will spell three times. Each spell must have different targets. Niv-Mizzet can't use this action again until the start of his next turn."
+			]
+		},
+		{
+			"name": "Electrodominance",
+			"entries": [
+				"{@actSave dex} {@dc 26}, each creature in a 60-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation}. {@actSaveFail} 28 ({@damage 8d6}) Lightning damage. {@actSaveFail} Half as much damage.  Niv-Mizzet can't use this action again until the start of his next turn."
+			]
+		}
+	],
+	"damageTags": [
+		"B",
+		"F",
+		"L",
+		"P",
+		"S"
+	],
+	"damageTagsSpell": [
+		"F",
+		"L",
+		"O"
+	],
+	"savingThrowForced": [
+		"dexterity",
+		"strength"
+	],
+	"savingThrowForcedSpell": [
+		"constitution",
+		"dexterity"
+	]
+}
