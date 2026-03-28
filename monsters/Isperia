@@ -1,0 +1,280 @@
+{
+	"name": "Isperia",
+	"isNamedCreature": true,
+	"source": "RavnicaHomebrew",
+	"page": 227,
+	"size": [
+		"G"
+	],
+	"type": "monstrosity",
+	"alignment": [
+		"L",
+		"N"
+	],
+	"ac": [
+		{
+			"ac": 17,
+			"from": [
+				"natural armor"
+			]
+		}
+	],
+	"hp": {
+		"average": 330,
+		"formula": "20d20 + 120"
+	},
+	"speed": {
+		"walk": 40,
+		"fly": 60
+	},
+	"str": 22,
+	"dex": 14,
+	"con": 22,
+	"int": 23,
+	"wis": 28,
+	"cha": 20,
+	"save": {
+		"dex": "+9",
+		"con": "+13",
+		"int": "+13",
+		"wis": "+16"
+	},
+	"skill": {
+		"arcana": "+13",
+		"history": "+13",
+		"insight": "+16",
+		"perception": "+16",
+		"investigation": "+13",
+		"religion": "+13",
+		"nature": "+13",
+		"medicine": "+16"
+	},
+	"senses": [
+		"truesight 120 ft."
+	],
+	"passive": 26,
+	"immune": [
+		"psychic"
+	],
+	"conditionImmune": [
+		"charmed",
+		"frightened"
+	],
+	"languages": [
+		"Common",
+		"Sphinx"
+	],
+	"cr": "24",
+	"spellcasting": [
+		{
+			"name": "Spellcasting",
+			"headerEntries": [
+				"Isperia's innate spellcasting ability is Wisdom (spell save {@dc 24}). Isperia can innately cast the following spells requiring no material components:"
+			],
+			"displayAs": "action",
+			"will": [
+				"{@spell Detect Magic|XPHB}",
+				"{@spell Detect Thoughts|XPHB}",
+				"{@spell Dispel Magic|XPHB}",
+				"{@spell Zone of Truth|XPHB}"
+			],
+			"daily": {
+				"3e": [
+					"{@spell Hold Monster|XPHB}",
+					"{@spell Silence|XPHB}",
+					"{@spell Synaptic Static|XPHB}",
+					"{@spell Telekinesis|XPHB}"
+				],
+				"1e": [
+					"{@spell Antimagic Field|XPHB}",
+					"{@spell Befuddlement|XPHB}",
+					"{@spell Teleport|XPHB}"
+				]
+			},
+			"ability": "wis",
+			"type": "spellcasting"
+		}
+	],
+	"trait": [
+		{
+			"name": "Inscrutable",
+			"entries": [
+				"Isperia is immune to any effect that would sense her emotions or read her thoughts, as well as any divination spell that she refuses. Wisdom ({@skill Insight}) checks made to ascertain her intentions or sincerity have disadvantage."
+			]
+		},
+		{
+			"name": "Legendary Resistance (3/Day)",
+			"entries": [
+				"If Isperia fails a saving throw, she can choose to succeed instead."
+			]
+		},
+		{
+			"name": "Magic Resistance",
+			"entries": [
+				"Isperia has advantage on saving throws against spells and other magical effects."
+			]
+		},
+		{
+			"name": "The Inscrutable (Mythic Trait; Recharges after a Short or Long Rest)",
+			"entries": [
+				"If Isperia is reduced to 0 hit points, she doesn't die or fall {@condition unconscious}. Instead, she regains 330 {@variantrule Hit Points|XPHB} and restores all uses of her Protective Magic and Spellcasting. Additionally, she can now use the options in the \"Mythic Actions\" section for 1 hour."
+			]
+		}
+	],
+	"action": [
+		{
+			"name": "Multiattack",
+			"entries": [
+				"Isperia makes three attacks, using any combination of Bolt of Authority and Claw attacks. She can cast a spell with a casting time of 1 action in place of one claw attack."
+			]
+		},
+		{
+			"name": "Bolt of Authority",
+			"entries": [
+				"{@atk rs} {@hit 16} to hit, range 120 ft., one target. {@h}5 ({@damage 3d6 + 9}) psychic damage. If the target is a creature, it can't take a reaction until the end of its next turn. Moreover, on its next turn, it must choose whether it gets a move, an action, or a bonus action; it gets only one of the three."
+			]
+		},
+		{
+			"name": "Claw",
+			"entries": [
+				"{@atk mw} {@hit 13} to hit, reach 5 ft., one target. {@h}22 ({@damage 3d10 + 6}) slashing damage. If the target is a creature, it must succeed on a {@dc 24} Wisdom saving throw or take 14 ({@damage 4d6}) psychic damage after each attack it makes against Isperia before the start of her next turn."
+			]
+		}
+	],
+	"legendary": [
+		{
+			"name": "Claw Attack",
+			"entries": [
+				"Isperia makes one Claw attack."
+			]
+		},
+		{
+			"name": "Arcane Shift",
+			"entries": [
+				"Isperia teleports up to 60 feet to an unoccupied space she can see."
+			]
+		},
+		{
+			"name": "Spellcasting.",
+			"entries": [
+				"Isperia uses Spellcasting."
+			]
+		}
+	],
+	"traitTags": [
+		"Legendary Resistances",
+		"Magic Resistance"
+	],
+	"senseTags": [
+		"U"
+	],
+	"actionTags": [
+		"Multiattack"
+	],
+	"languageTags": [
+		"C",
+		"OTH"
+	],
+	"spellcastingTags": [
+		"O"
+	],
+	"miscTags": [
+		"RA",
+		"MW"
+	],
+	"hasFluff": true,
+	"hasFluffImages": true,
+	"token": {
+		"name": "Isperia",
+		"source": "GGR"
+	},
+	"fluff": {
+		"name": "Isperia",
+		"source": "GGR",
+		"entries": [
+			{
+				"type": "entries",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Isperia is the current guildmaster of the Azorius Senate. As a sphinx, she is aloof and values solitude above all. However, she has been forced to give up her privacy to deal with the increased crime and chaos on Ravnica.",
+									"Isperia is devoted to her guild's belief that law is the ultimate bulwark against chaos, and it is her steady hand that guides the Azorius through these uncertain times. As guildmaster, Isperia serves as the supreme judge, a role that takes advantage of her encyclopedic knowledge of Ravnica's labyrinthine legal system.",
+									"If an encounter turns violent, Isperia refrains from using lethal force if possible, preferring to subdue a wrongdoing so that the legal system can mete out justice."
+								]
+							}
+						]
+					}
+				]
+			}
+		],
+		"images": [
+			{
+				"type": "image",
+				"href": {
+					"type": "internal",
+					"path": "bestiary/GGR/Isperia.webp"
+				},
+				"credit": "Scott M. Fischer"
+			}
+		]
+	},
+	"reaction": [
+		{
+			"name": "Protective Magic (3/Day).",
+			"entries": [
+				"Isperia casts Counterspell or Shield in response to the spell's trigger, using the same spellcasting ability as Spellcasting."
+			]
+		}
+	],
+	"bonus": [
+		{
+			"name": "Supreme Legal Authority",
+			"entries": [
+				"{@actSave int} {@dc 24}, each enemy in a 500-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from Isperia. {@actSaveFail} Isperia choses an action: {@action Attack}, {@action Magic|XPHB}, {@action Dash}, {@action Disengage}, {@action Dodge}, {@action Help}, {@action Hide}, {@action Influence|XPHB}, {@action Ready}, {@action Search}, {@action Study|XPHB}, or {@action Utilize|XPHB}. The target cannot take the chosen action until the start of Isperia's next turn. Isperia cannot choose the same action twice in a row."
+			]
+		}
+	],
+	"mythicHeader": [
+		"If Isperia's \"The Inscrutable\" trait has activated in the last hour, she can use the options below as legendary actions."
+	],
+	"mythic": [
+		{
+			"name": "Final Word",
+			"entries": [
+				"Isperia casts {@spell Power Word Stun|XPHB}, using the same spellcasting ability as Spellcasting. She can't take this action again until the start of her next turn."
+			]
+		},
+		{
+			"name": "Rebuke",
+			"entries": [
+				"{@actSave wis} {@dc 24} one creature she can see within 100 feet. {@actSaveFail} 17 ({@damage 3d10}) psychic damage and the target is knocked {@condition Prone}. {@actSaveSuccess} Half as much damage only."
+			]
+		}
+	],
+	"conditionInflict": [
+		"prone"
+	],
+	"damageTags": [
+		"S",
+		"Y"
+	],
+	"damageTagsSpell": [
+		"O",
+		"Y"
+	],
+	"savingThrowForced": [
+		"intelligence",
+		"wisdom"
+	],
+	"savingThrowForcedSpell": [
+		"charisma",
+		"constitution",
+		"intelligence",
+		"strength",
+		"wisdom"
+	]
+}
