@@ -1,0 +1,124 @@
+{
+	"name": "Narcomoeba",
+	"size": [
+		"M"
+	],
+	"type": "aberration",
+	"source": "RavnicaHomebrew",
+	"alignment": [
+		"U"
+	],
+	"ac": [
+		9
+	],
+	"hp": {
+		"formula": "4d8",
+		"average": 18
+	},
+	"speed": {
+		"walk": 0,
+		"fly": {
+			"number": 10,
+			"condition": "(hover)"
+		},
+		"canHover": true
+	},
+	"str": 1,
+	"dex": 8,
+	"con": 11,
+	"int": 2,
+	"wis": 4,
+	"cha": 6,
+	"passive": 7,
+	"cr": "1/2",
+	"senses": [
+		"truesight 10 ft. (blind beyond this)"
+	],
+	"senseTags": [
+		"U"
+	],
+	"conditionImmune": [
+		"blinded",
+		"charmed",
+		"deafened",
+		"exhaustion",
+		"frightened",
+		"grappled",
+		"petrified",
+		"poisoned",
+		"prone",
+		"restrained",
+		"unconscious"
+	],
+	"immune": [
+		"acid",
+		"bludgeoning",
+		"cold",
+		"fire",
+		"lightning",
+		"necrotic",
+		"piercing",
+		"poison",
+		"radiant",
+		"slashing",
+		"thunder"
+	],
+	"trait": [
+		{
+			"name": "Detect Inteligence",
+			"entries": [
+				"The narcomoeba magically senses the location of any creature within 500 feet of itself that has an Intelligence score of 3 or higher, regardless of interposing barriers."
+			]
+		},
+		{
+			"name": "Incorporeal Movement",
+			"entries": [
+				"The narcomoeba can move through other creatures and objects as if they were {@quickref difficult terrain||3}. It takes 5 ({@damage 1d10}) force damage if it ends its turn inside an object."
+			]
+		},
+		{
+			"name": "Psychic Leech",
+			"entries": [
+				"Any creature within 30 feet of the narcomoeba has disadvantage on saving throws to maintain {@status Concentration|XPHB} and on Intelligence, Wisdom, and Charisma saving throws. "
+			]
+		}
+	],
+	"traitTags": [
+		"Incorporeal Movement"
+	],
+	"spellcasting": [
+		{
+			"name": "Spellcasting (Psionics)",
+			"headerEntries": [
+				"The narcomoeba can cast the following spells, requiring no spell components:"
+			],
+			"displayAs": "action",
+			"will": [
+				"{@spell Dimension Door|XPHB}",
+				"{@spell Etherealness|XPHB}"
+			],
+			"type": "spellcasting"
+		}
+	],
+	"spellcastingTags": [
+		"P"
+	],
+	"action": [
+		{
+			"name": "Dream Eater",
+			"entries": [
+				"{@atk mw} {@hit +2} to hit, reach 5 ft., one {@condition Unconscious|XPHB} target. {@h}2 ({@damage 1d4}) psychic damage."
+			]
+		}
+	],
+	"miscTags": [
+		"MW"
+	],
+	"damageTags": [
+		"O",
+		"Y"
+	],
+	"damageTagsSpell": [
+		"O"
+	]
+}
