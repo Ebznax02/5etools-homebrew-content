@@ -1,0 +1,43 @@
+{
+  "name": "Dimir Mind Mage",
+  "source": "RavnicaHomebrew",
+  "category": "G",
+  "prerequisite": [
+    {
+      "level": 4,
+      "otherSummary": {
+        "entry": "Renown 10+ with the {@book House Dimir|GGR|2|House Dimir}",
+        "entrySummary": "House Dimir Renown 10+"
+      }
+    }
+  ],
+  "ability": [
+    {
+      "choose": {
+        "from": [
+          "int",
+          "wis",
+          "cha"
+        ],
+    "amount": 1
+      }
+    }
+  ],
+  "entries": [
+    "You gain the following benefits.",
+    {
+      "type": "entries",
+      "name": "Subtle Magic",
+      "entries": [
+        ""
+      ]
+    },
+    {
+      "type": "entries",
+      "name": "",
+      "entries": [
+        ""
+      ]
+    }
+  ]
+}
