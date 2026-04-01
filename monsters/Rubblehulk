@@ -1,0 +1,106 @@
+{
+	"name": "Rubblehulk",
+	"size": [
+		"H"
+	],
+	"type": "elemental",
+	"source": "ReturntoRavnicaRemastered",
+	"alignment": [
+		"C",
+		"N"
+	],
+	"ac": [
+		{
+			"ac": 15,
+			"from": [
+				"natural armor"
+			]
+		}
+	],
+	"hp": {
+		"formula": "12d12 + 48",
+		"average": 126
+	},
+	"speed": {
+		"walk": 30
+	},
+	"str": 26,
+	"dex": 11,
+	"con": 19,
+	"int": 4,
+	"wis": 10,
+	"cha": 2,
+	"passive": 10,
+	"cr": "7",
+	"senses": [
+		"tremorsense 60 ft."
+	],
+	"senseTags": [
+		"T"
+	],
+	"vulnerable": [
+		"thunder"
+	],
+	"resist": [
+		"bludgeoning",
+		"piercing",
+		"slashing"
+	],
+	"conditionImmune": [
+		"blinded",
+		"deafened",
+		"exhaustion",
+		"petrified",
+		"poisoned"
+	],
+	"immune": [
+		"poison"
+	],
+	"trait": [
+		{
+			"name": "Siege Monster",
+			"entries": [
+				"The rubblehulk deals double damage to objects and structures."
+			]
+		},
+		{
+			"name": "Incorperate Rubble.",
+			"entries": [
+				"Whenever a medium or larger object within 10 feet of the rubblehulk is reduced to 0 hit points, the rubblehulk gains 11 ({@damage 2d10}) hit points plus an additional 11 ({@damage 2d10}) hit points for each size category above medium the destroyed object was."
+			]
+		}
+	],
+	"traitTags": [
+		"Siege Monster"
+	],
+	"action": [
+		{
+			"name": "Multiattack.",
+			"entries": [
+				"The rubblehulk makes 2 Crushing Blow attacks."
+			]
+		},
+		{
+			"name": "Crushing Blow",
+			"entries": [
+				"{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}14 ({@damage 1d10 + 8}) bludgeoning damage. Each creature and object of the rubblehulk's choice within 10 feet of the target an additional 11 ({@damage 3d6}) thunder damage."
+			]
+		}
+	],
+	"miscTags": [
+		"MW",
+		"RCH"
+	],
+	"bonus": [
+		{
+			"name": "Deconstruct",
+			"entries": [
+				"The rubblehulk disassembles itself into a loose collection of vines and debris. In this form it gains a Speed of 60 feet and any movement it makes does not provoke an {@action Opportunity Attack|XPHB}. While disassembled the rubblehulk can take no actions."
+			]
+		}
+	],
+	"damageTags": [
+		"B",
+		"T"
+	]
+}
